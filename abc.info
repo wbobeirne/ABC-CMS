@@ -1,0 +1,63 @@
+name = ABC
+distribution_name = ABC
+description = Content management system for the ABC organization
+core = 7.x
+
+;********;
+;* Core *;
+;********;
+
+; Drupal Core
+dependencies[] = menu
+dependencies[] = image
+dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = dblog
+dependencies[] = update
+
+;**********************;
+;* ABC costum modules *;
+;**********************;
+
+;*******************;
+;* Contrib modules *;
+;*******************;
+
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = date_popup
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = filter_perms
+dependencies[] = field_group
+dependencies[] = jquery_update
+dependencies[] = link
+dependencies[] = navbar
+dependencies[] = pathauto
+dependencies[] = pathauto_persist
+dependencies[] = plupload
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_bulk_operations
+dependencies[] = views_data_export
+dependencies[] = views_ui
+
+; Development Modules - Temporary
+dependencies[] = devel
+dependencies[] = diff
+
+
+;*************;
+;* Libraries *;
+;*************;
+
+dependencies[] = libraries

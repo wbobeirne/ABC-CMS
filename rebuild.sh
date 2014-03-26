@@ -53,7 +53,6 @@ echo 'Setup for local dev...'
 drush en devel -y
 drush en views_ui -y
 drush en field_ui -y
-drush vset cdn_basic_mapping "http://x.pac-12.com|.png .jpg .gif"
 echo 'Running updates...'
 drush updb -y;
 echo 'Clearing cache...'

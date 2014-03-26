@@ -40,10 +40,6 @@ projects[date][version] = 2.7
 projects[entity][subdir] = contrib
 projects[entity][version] = 1.3
 
-; Fast 404
-projects[fast_404][subdir] = contrib
-projects[fast_404][version] = 1.3
-
 ; Features
 projects[features][subdir] = contrib
 projects[features][version] = 2.0-beta2
@@ -78,7 +74,8 @@ projects[libraries][version] = 2.1
 
 ; Navbar
 projects[navbar][subdir] = contrib
-projects[navbar][version] = 1.4
+projects[navbar][version] = 1.0-alpha3
+projects[navbar][patch][1875254] = http://drupal.org/files/navbar_has_mismatching_closing_tag_1875254_1.patch
 
 ; Pathauto
 projects[pathauto][subdir] = contrib
@@ -95,6 +92,10 @@ projects[plupload][version] = 1.1
 ; Strongarm
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0
+
+; Token
+projects[token][subdir] = contrib
+projects[token][version] = 1.5
 
 ; Views
 projects[views][subdir] = contrib
@@ -149,3 +150,17 @@ libraries[flexslider][destination] = libraries
 libraries[plupload][download][type] = get
 libraries[plupload][download][url] = https://github.com/moxiecode/plupload/archive/v1.5.8.zip
 libraries[plupload][destination] = libraries
+
+libraries[backbone][download][type] = git
+libraries[backbone][download][url] = https://github.com/jashkenas/backbone.git
+libraries[backbone][download][tag] = 1.0.0
+libraries[backbone][destination] = libraries
+
+libraries[backbone-mutators][download][type] = get
+libraries[backbone-mutators][download][url] = https://raw.github.com/asciidisco/Backbone.Mutators/master/backbone.mutators.min.js
+libraries[backbone-mutators][destination] = libraries
+
+libraries[underscore][download][type] = git
+libraries[underscore][download][url] = https://github.com/jashkenas/underscore.git
+libraries[underscore][download][tag] = 1.5.1
+libraries[underscore][destination] = libraries
