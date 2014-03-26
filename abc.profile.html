@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function abc_install() {
+  theme_enable(array('abc_foundation'));
+  variable_set('theme_default', 'abc_foundation'); 
+  variable_set('admin_theme', 'ember');
+  variable_set('jquery_update_jquery_version', '1.7');
+}
