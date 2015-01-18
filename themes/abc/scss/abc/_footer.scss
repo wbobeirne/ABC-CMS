@@ -1,0 +1,21 @@
+// Styles for the sitewide footer
+#site-footer {
+  background: $footer-bg;
+  padding: 55px 65px;
+  margin-top: 180px;
+
+  ul {
+    li {
+      float: left;
+      list-style: none;
+      padding: 0 25px;
+
+      a {
+        color: $footer-text-color;
+        &:hover {
+          color: lighten($footer-text-color, 10%);
+        }
+      }
+    }
+  }
+}

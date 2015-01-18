@@ -1,0 +1,43 @@
+/************************************
+      ABC specific variables.
+************************************/
+
+// Colors
+$color-gray-darkest: #2A2F35;
+$color-gray-dark: #474D59;
+$color-gray-light: #AEB4BF;
+$color-gray-lightest: #FAFBFD;
+
+$color-blue-pri: #00A2E4;
+$color-blue-sec: #66BADD;
+
+$color-red-pri: #F93E32;
+$color-red-sec: lighten($color-red-pri, 10%);
+
+$color-gold-pri: #FECC01;
+$color-gold-sec: lighten($color-gold-pri, 10%);
+
+$color-purple-pri: #6327A3;
+$color-purple-sec: lighten($color-purple-pri, 10%);
+
+// Component colors
+$header-bg: #FFF;
+$header-text-color: $color-gray-dark;
+
+$footer-bg: $color-gray-darkest;
+$footer-text-color: $color-gray-light;
+
+// Font sizes
+$menu-fsize: 15px;
+
+$title-fsize: 2.5em;
+$title-lheight: 52px;
+
+$major-section-fsize: 1.6em;
+$major-section-lheight: 52px;
+
+$minor-section-fsize: 1.4em;
+$minor-section-lheight: 34px;
+
+$body-fsize: 18px;
+$body-lheight: 28px;

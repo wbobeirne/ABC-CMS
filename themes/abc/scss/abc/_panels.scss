@@ -1,0 +1,80 @@
+// Collective styles for all panels.
+
+// Wide header panel
+.pane-bundle-wide-header {
+  padding: 50px 0 90px;
+  text-align: center;
+
+  .pane-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 10px;
+    font-size: $minor-section-fsize;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 50%;
+      bottom: 0;
+      height: 2px;
+      width: 140px;
+      margin-left: -70px;
+      background: $color-gray-dark;
+    }
+  }
+
+  .field-name-field-content {
+    font-size: $title-fsize;
+    p {
+      margin: 0;
+    }
+  }
+
+  &.has-color {
+    .pane-title,
+    .pane-content {
+      color: #FFF;
+    }
+    .pane-title:after {
+      background: rgba($color-gray-lightest, 0.5);
+    }
+  }
+  &.color-blue {
+    background: $color-blue-pri;
+  }
+  &.color-red {
+    background: $color-red-pri;
+  }
+  &.color-gold {
+    background: $color-gold-pri;
+  }
+  &.color-purple {
+    background: $color-purple-pri;
+  }
+}
+
+
+// Wide image rotator
+.pane-bundle-wide-image-rotator {
+  position: relative;
+  padding-top: 35%;
+  max-height: 460px;
+
+  .field-name-field-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

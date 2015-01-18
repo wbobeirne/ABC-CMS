@@ -3,6 +3,11 @@ distribution_name = ABC
 description = Content management system for the ABC organization
 core = 7.x
 
+
+; Panel Layouts
+plugins[panels][layouts] = layouts
+
+
 ;********;
 ;* Core *;
 ;********;

@@ -1,0 +1,82 @@
+@import "compass";
+@import "abc/variables";
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+.field-name-body,
+.cke_editable {
+  h2 {
+    position: relative;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    font-size: $major-section-fsize;
+    line-height: $major-section-lheight;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 55px;
+      height: 3px;
+      background: $color-blue-pri;
+    }
+  }
+
+  h3 {
+    font-size: $minor-section-fsize;
+    line-height: $minor-section-lheight;
+  }
+
+  p {
+    margin: 0 0 35px 0;
+    font-size: $body-fsize;
+    line-height: $body-lheight;
+  }
+
+  blockquote {
+    position: relative;
+    float: right;
+    width: 60%;
+    border: none;
+    padding-bottom: 30px;
+    margin-right: -10%;
+    &, p {
+      color: $color-blue-pri;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 3px;
+      bottom: 0;
+      @include background-image(linear-gradient(
+        90deg,
+        $color-blue-pri, $color-blue-pri 33%,
+        $color-gold-pri 33%, $color-gold-pri 66%,
+        $color-red-pri 66%, $color-red-pri
+      ));
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
+// CKEditor specifics
+.cke_editable {
+  margin: 0;
+  padding: 20px 30px;
+}

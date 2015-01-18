@@ -1,0 +1,83 @@
+/************************************
+      ABC specific variables.
+************************************/
+/* line 4, ../scss/typography.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 11, ../scss/typography.scss */
+.field-name-body h2,
+.cke_editable h2 {
+  position: relative;
+  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+  font-size: 1.6em;
+  line-height: 52px;
+}
+/* line 18, ../scss/typography.scss */
+.field-name-body h2:after,
+.cke_editable h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 55px;
+  height: 3px;
+  background: #00a2e4;
+}
+/* line 29, ../scss/typography.scss */
+.field-name-body h3,
+.cke_editable h3 {
+  font-size: 1.4em;
+  line-height: 34px;
+}
+/* line 34, ../scss/typography.scss */
+.field-name-body p,
+.cke_editable p {
+  margin: 0 0 35px 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+/* line 40, ../scss/typography.scss */
+.field-name-body blockquote,
+.cke_editable blockquote {
+  position: relative;
+  float: right;
+  width: 70%;
+  border: none;
+  padding-bottom: 20px;
+  margin-right: -20%;
+}
+/* line 47, ../scss/typography.scss */
+.field-name-body blockquote, .field-name-body blockquote p,
+.cke_editable blockquote,
+.cke_editable blockquote p {
+  color: #00a2e4;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+/* line 54, ../scss/typography.scss */
+.field-name-body blockquote:after,
+.cke_editable blockquote:after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 3px;
+  background-image: -webkit-linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
+  background-image: -moz-linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
+  background-image: -o-linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
+  background-image: linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
+}
+/* line 68, ../scss/typography.scss */
+.field-name-body img,
+.cke_editable img {
+  max-width: 100%;
+}
+
+/* line 75, ../scss/typography.scss */
+.cke_editable {
+  margin: 0;
+  padding: 20px 30px;
+}

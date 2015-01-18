@@ -6,10 +6,7 @@ core = 7.x
 ;***************;
 
 projects[drupal][type] = core
-projects[drupal][version] = 7.26
-projects[drupal][download][type] = get
-projects[drupal][download][url] = http://ftp.drupal.org/files/projects/drupal-7.26.tar.gz
-projects[drupal][patch][] = https://drupal.org/files/drupal7.entity-system.1525176-104.patch
+projects[drupal][version] = 7.34
 
 
 ;*******************;
@@ -26,35 +23,47 @@ projects[chosen][version] = 2.0-alpha4
 
 ; CKEditor
 projects[ckeditor][subdir] = contrib
-projects[ckeditor][version] = 1.13
+projects[ckeditor][version] = 1.16
+
+; Context
+projects[context][subdir] = contrib
+projects[context][version] = 3.6
 
 ; Ctools
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.4
+projects[ctools][version] = 1.5
 
 ; Date
 projects[date][subdir] = contrib
-projects[date][version] = 2.7
+projects[date][version] = 2.8
 
 ; Entity
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.3
+projects[entity][version] = 1.5
+
+; Entity reference
+projects[entityreference][subdir] = contrib
+projects[entityreference][version] = 1.1
 
 ; Features
 projects[features][subdir] = contrib
-projects[features][version] = 2.0-beta2
+projects[features][version] = 2.3
+
+; Fieldable panels panes
+projects[fieldable_panels_panes][subdir] = contrib
+projects[fieldable_panels_panes][version] = 1.5
 
 ; Field group
 projects[field_group][subdir] = contrib
-projects[field_group][version] = 1.3
+projects[field_group][version] = 1.4
+
+; File entity
+projects[file_entity][subdir] = contrib
+projects[file_entity][version] = 2.0-beta1
 
 ; Filter permissions
 projects[filter_perms][subdir] = contrib
 projects[filter_perms][version] = 1.0
-
-; Flexslider
-projects[flexslider][subdir] = contrib
-projects[flexslider][version] = 2.0-alpha3
 
 ; Image Magick
 projects[imagemagick][subdir] = contrib
@@ -62,20 +71,32 @@ projects[imagemagick][version] = 1.0
 
 ; jQuery Update
 projects[jquery_update][subdir] = contrib
-projects[jquery_update][version] = 2.3
+projects[jquery_update][version] = 2.4
 
 ; Link
 projects[link][subdir] = contrib
-projects[link][version] = 1.1
+projects[link][version] = 1.3
 
 ; Libraries
 projects[libraries][subdir] = contrib
-projects[libraries][version] = 2.1
+projects[libraries][version] = 2.2
+
+; Media
+projects[media][subdir] = contrib
+projects[media][version] = 2.x-dev
+
+; Multiform
+projects[multiform][subdir] = contrib
+projects[multiform][version] = 1.1
 
 ; Navbar
 projects[navbar][subdir] = contrib
-projects[navbar][version] = 1.0-alpha3
-projects[navbar][patch][1875254] = http://drupal.org/files/navbar_has_mismatching_closing_tag_1875254_1.patch
+projects[navbar][version] = 1.5
+;projects[navbar][patch][1875254] = http://drupal.org/files/navbar_has_mismatching_closing_tag_1875254_1.patch
+
+; Panels
+projects[panels][subdir] = contrib
+projects[panels][version] = 3.4
 
 ; Pathauto
 projects[pathauto][subdir] = contrib
@@ -87,7 +108,7 @@ projects[pathauto_persist][version] = 1.3
 
 ; Plupload
 projects[plupload][subdir] = contrib
-projects[plupload][version] = 1.1
+projects[plupload][version] = 1.7
 
 ; Strongarm
 projects[strongarm][subdir] = contrib
@@ -99,15 +120,15 @@ projects[token][version] = 1.5
 
 ; Views
 projects[views][subdir] = contrib
-projects[views][version] = 3.7
+projects[views][version] = 3.8
 
 ; Views Bulk Operations
 projects[views_bulk_operations][subdir] = contrib
-projects[views_bulk_operations][version] = 3.1
+projects[views_bulk_operations][version] = 3.2
 
 ; Views Data Export
 projects[views_data_export][subdir] = contrib
-projects[views_data_export][version] = 3.0-beta6
+projects[views_data_export][version] = 3.0-beta8
 
 
 ;*********************;
@@ -116,7 +137,7 @@ projects[views_data_export][version] = 3.0-beta6
 
 ; Devel
 projects[devel][subdir] = contrib
-projects[devel][version] = 1.3
+projects[devel][version] = 1.5
 
 ; Diff
 projects[diff][subdir] = contrib
@@ -127,8 +148,12 @@ projects[diff][version] = 3.2
 ;* Theme *;
 ;*********;
 
-projects[ember][type] = theme
-projects[ember][version] = 2.0-alpha2
+projects[adminimal_theme][type] = theme
+projects[adminimal_theme][version] = 1.19
+
+projects[zurb-foundation][type] = theme
+projects[zurb-foundation][version] = 4.0
+projects[zurb-foundation][patch][2205041] = https://www.drupal.org/files/issues/zurb-foundation-array-2-string-2205041-18.patch
 
 ;*************;
 ;* Libraries *;
@@ -141,11 +166,6 @@ libraries[ckeditor][destination] = libraries
 libraries[chosen][download][type] = get
 libraries[chosen][download][url] = https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip
 libraries[chosen][destination] = libraries
-
-libraries[flexslider][download][type] = git
-libraries[flexslider][download][url] = https://github.com/woothemes/FlexSlider.git
-libraries[flexslider][download][revision] = ca347d49f3656ff7ba7ea1a043feec7626a0db91
-libraries[flexslider][destination] = libraries
 
 libraries[plupload][download][type] = get
 libraries[plupload][download][url] = https://github.com/moxiecode/plupload/archive/v1.5.8.zip

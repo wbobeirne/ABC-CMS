@@ -1,0 +1,90 @@
+// Styles pertaining to the sitewide top bar
+$header-height: 80px;
+
+$logo: url('http://i.imgur.com/7IZCtvA.jpg');
+$logo-width: 72px;
+
+#site-header {
+  height: $header-height;
+  padding: 0 90px 0 45px;
+  box-shadow: 0 1px 1px rgba($color-gray-light, 0.3);
+
+  .top-bar {
+    background: $header-bg;
+
+    .title-area {
+      position: absolute;
+      margin-top: 13px;
+      z-index: 2;
+      .name {
+        background: $logo no-repeat;
+        height: 100%;
+        width: $logo-width;
+        margin-right: 15px;
+        text-indent: -9999px;
+      }
+    }
+  }
+
+  #main-menu {
+    width: 100%;
+    background: none;
+    padding-left: $logo-width + 25;
+    z-index: 1;
+
+    li:hover {
+      a {
+        background-color: darken($header-bg, 5%);
+      }
+    }
+
+    a {
+      padding: 0 25px;
+      color: $header-text-color;
+      background-color: $header-bg;
+      font-size: $menu-fsize;
+      line-height: $header-height;
+      font-weight: bold;
+      &:after {
+        display: none;
+      }
+    }
+
+    .dropdown {
+      a {
+        font-weight: normal;
+        line-height: 48px;
+        padding-right: 40px;
+
+        &:hover {
+          color: $color-blue-pri;
+        }
+      }
+      .first a {
+        padding-top: 15px;
+      }
+      .last a {
+        padding-bottom: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+
+    // Donate button, always at the end
+    /*.last.leaf {
+      float: right;
+      a {
+        margin-top: 16px;
+        line-height: $header-height - 32px;
+        padding: 0 30px;
+        background-color: $color-red-pri;
+        color: #FFF;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: $color-red-sec;
+        }
+      }
+    }*/
+  }
+}
