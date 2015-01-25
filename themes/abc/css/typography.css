@@ -44,10 +44,10 @@ body {
 .cke_editable blockquote {
   position: relative;
   float: right;
-  width: 70%;
+  width: 60%;
   border: none;
-  padding-bottom: 20px;
-  margin-right: -20%;
+  padding-bottom: 30px;
+  margin-right: -10%;
 }
 /* line 47, ../scss/typography.scss */
 .field-name-body blockquote, .field-name-body blockquote p,
@@ -58,25 +58,31 @@ body {
   line-height: 1.4em;
   font-weight: bold;
 }
-/* line 54, ../scss/typography.scss */
+/* line 53, ../scss/typography.scss */
+.field-name-body blockquote p,
+.cke_editable blockquote p {
+  margin: 0;
+}
+/* line 57, ../scss/typography.scss */
 .field-name-body blockquote:after,
 .cke_editable blockquote:after {
   content: "";
   position: absolute;
   width: 140px;
   height: 3px;
+  bottom: 0;
   background-image: -webkit-linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
   background-image: -moz-linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
   background-image: -o-linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
   background-image: linear-gradient(90deg, #00a2e4, #00a2e4 33%, #fecc01 33%, #fecc01 66%, #f93e32 66%, #f93e32);
 }
-/* line 68, ../scss/typography.scss */
+/* line 72, ../scss/typography.scss */
 .field-name-body img,
 .cke_editable img {
   max-width: 100%;
 }
 
-/* line 75, ../scss/typography.scss */
+/* line 79, ../scss/typography.scss */
 .cke_editable {
   margin: 0;
   padding: 20px 30px;

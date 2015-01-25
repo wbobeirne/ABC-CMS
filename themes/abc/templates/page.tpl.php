@@ -11,7 +11,15 @@
       <?php endif; ?>
         <nav class="top-bar"<?php print $top_bar_options; ?>>
           <ul class="title-area">
-            <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
+            <li class="name">
+              <h1>
+                <a href="/" rel="home" title="ABC Home">
+                  <span class="a">A</span><!--
+               --><span class="b">B</span><!--
+               --><span class="c">C</span>
+                </a>
+              </h1>
+            </li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
           </ul>
           <section class="top-bar-section">

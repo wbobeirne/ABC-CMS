@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @file
  * This file is a custom file that loads all files. Each non-base layer
  * can be disabled.
@@ -4914,7 +4915,7 @@ label.error {
 
 /* line 380, ../../../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
 .top-bar-js-breakpoint {
-  width: 940px !important;
+  width: 1060px !important;
   visibility: hidden;
 }
 
@@ -4923,7 +4924,7 @@ label.error {
   display: block;
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 1060px) {
   /* line 389, ../../../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
   .top-bar {
     background: #111111;
@@ -7364,90 +7365,129 @@ a.th {
   margin-top: 40px;
 }
 
-/* line 7, ../scss/abc/_header.scss */
-#site-header {
-  height: 80px;
-  padding: 0 90px 0 45px;
-  box-shadow: 0 1px 1px rgba(174, 180, 191, 0.3);
-}
-/* line 12, ../scss/abc/_header.scss */
-#site-header .top-bar {
-  background: white;
-}
-/* line 15, ../scss/abc/_header.scss */
-#site-header .top-bar .title-area {
-  position: absolute;
-  margin-top: 13px;
-  z-index: 2;
-}
-/* line 19, ../scss/abc/_header.scss */
-#site-header .top-bar .title-area .name {
-  background: url("http://i.imgur.com/7IZCtvA.jpg") no-repeat;
-  height: 100%;
-  width: 72px;
-  margin-right: 15px;
-  text-indent: -9999px;
-}
-/* line 29, ../scss/abc/_header.scss */
-#site-header #main-menu {
-  width: 100%;
-  background: none;
-  padding-left: 97px;
-  z-index: 1;
-    /*.last.leaf {
-      float: right;
-      a {
-        margin-top: 16px;
-        line-height: $header-height - 32px;
-        padding: 0 30px;
-        background-color: $color-red-pri;
-        color: #FFF;
-        border-radius: 3px;
-
-        &:hover {
-          background-color: $color-red-sec;
-        }
-      }
-    }*/
-}
-/* line 36, ../scss/abc/_header.scss */
-#site-header #main-menu li:hover a {
-  background-color: #f2f2f2;
-}
-/* line 41, ../scss/abc/_header.scss */
-#site-header #main-menu a {
-  padding: 0 25px;
-  color: #474d59;
+/* line 11, ../scss/abc/_header.scss */
+#site-header .top-bar,
+#site-header ul,
+#site-header a {
   background-color: white;
-  font-size: 15px;
-  line-height: 80px;
-  font-weight: bold;
+  color: #474d59;
 }
-/* line 48, ../scss/abc/_header.scss */
-#site-header #main-menu a:after {
-  display: none;
-}
-/* line 54, ../scss/abc/_header.scss */
-#site-header #main-menu .dropdown a {
-  font-weight: normal;
-  line-height: 48px;
-  padding-right: 40px;
-}
-/* line 59, ../scss/abc/_header.scss */
-#site-header #main-menu .dropdown a:hover {
+/* line 18, ../scss/abc/_header.scss */
+#site-header .top-bar .name .a {
   color: #00a2e4;
 }
-/* line 63, ../scss/abc/_header.scss */
-#site-header #main-menu .dropdown .first a {
-  padding-top: 15px;
+/* line 19, ../scss/abc/_header.scss */
+#site-header .top-bar .name .b {
+  color: #fecc01;
 }
-/* line 66, ../scss/abc/_header.scss */
-#site-header #main-menu .dropdown .last a {
-  padding-bottom: 20px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+/* line 20, ../scss/abc/_header.scss */
+#site-header .top-bar .name .c {
+  color: #f93e32;
+}
+/* line 23, ../scss/abc/_header.scss */
+#site-header .top-bar .menu-icon span {
+  box-shadow: none;
+}
+/* line 25, ../scss/abc/_header.scss */
+#site-header .top-bar .menu-icon span:after {
+  position: absolute;
+  content: "☰";
+  top: -1px;
+  right: -23px;
+  font-size: 15px;
+}
+/* line 36, ../scss/abc/_header.scss */
+#site-header .top-bar-section .has-dropdown > a:after {
+  border-color: transparent transparent transparent #474d59;
+}
+/* line 42, ../scss/abc/_header.scss */
+#site-header #donate-button a {
+  background: #f93e32;
+  color: #FFF;
+}
+/* line 45, ../scss/abc/_header.scss */
+#site-header #donate-button a:hover {
+  background-color: #fa6d64;
 }
 
+@media only screen and (min-width: 1060px) {
+  /* line 54, ../scss/abc/_header.scss */
+  #site-header {
+    height: 80px;
+    padding: 0 45px;
+    box-shadow: 0 1px 1px rgba(174, 180, 191, 0.3);
+  }
+  /* line 59, ../scss/abc/_header.scss */
+  #site-header .top-bar {
+    background: white;
+  }
+  /* line 62, ../scss/abc/_header.scss */
+  #site-header .top-bar .title-area {
+    position: absolute;
+    margin-top: 13px;
+    z-index: 2;
+  }
+  /* line 66, ../scss/abc/_header.scss */
+  #site-header .top-bar .title-area a {
+    background: url("http://i.imgur.com/7IZCtvA.jpg") no-repeat;
+    height: 100%;
+    width: 72px;
+    text-indent: -9999px;
+  }
+  /* line 75, ../scss/abc/_header.scss */
+  #site-header #main-menu {
+    width: 100%;
+    background: none;
+    padding-left: 97px;
+    z-index: 1;
+  }
+  /* line 83, ../scss/abc/_header.scss */
+  #site-header li:hover a {
+    background-color: #f2f2f2;
+  }
+  /* line 88, ../scss/abc/_header.scss */
+  #site-header a {
+    padding: 0 25px;
+    font-size: 15px;
+    line-height: 80px;
+    font-weight: bold;
+  }
+  /* line 93, ../scss/abc/_header.scss */
+  #site-header a:after {
+    display: none;
+  }
+  /* line 99, ../scss/abc/_header.scss */
+  #site-header .dropdown a {
+    font-weight: normal;
+    line-height: 48px;
+    padding-right: 40px;
+  }
+  /* line 104, ../scss/abc/_header.scss */
+  #site-header .dropdown a:hover {
+    color: #00a2e4;
+  }
+  /* line 108, ../scss/abc/_header.scss */
+  #site-header .dropdown .first a {
+    padding-top: 15px;
+  }
+  /* line 111, ../scss/abc/_header.scss */
+  #site-header .dropdown .last a {
+    padding-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  /* line 118, ../scss/abc/_header.scss */
+  #site-header #donate-button {
+    float: right;
+  }
+  /* line 120, ../scss/abc/_header.scss */
+  #site-header #donate-button a {
+    margin-top: 16px;
+    line-height: 48px;
+    padding: 0 30px;
+    border-radius: 3px;
+  }
+}
 /* line 4, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header {
   padding: 50px 0 90px;

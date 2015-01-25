@@ -4,33 +4,80 @@ $header-height: 80px;
 $logo: url('http://i.imgur.com/7IZCtvA.jpg');
 $logo-width: 72px;
 
+// All-size styles
 #site-header {
-  height: $header-height;
-  padding: 0 90px 0 45px;
-  box-shadow: 0 1px 1px rgba($color-gray-light, 0.3);
+  .top-bar,
+  ul,
+  a {
+    background-color: $header-bg;
+    color: $header-text-color;
+  }
 
   .top-bar {
-    background: $header-bg;
+    .name {
+      .a { color: $color-blue-pri; }
+      .b { color: $color-gold-pri; }
+      .c { color: $color-red-pri; }
+    }
 
-    .title-area {
-      position: absolute;
-      margin-top: 13px;
-      z-index: 2;
-      .name {
-        background: $logo no-repeat;
-        height: 100%;
-        width: $logo-width;
-        margin-right: 15px;
-        text-indent: -9999px;
+    .menu-icon span {
+      box-shadow: none;
+      &:after {
+        position: absolute;
+        content: "☰";
+        top: -1px;
+        right: -23px;
+        font-size: 15px;
       }
     }
   }
 
-  #main-menu {
-    width: 100%;
-    background: none;
-    padding-left: $logo-width + 25;
-    z-index: 1;
+  .top-bar-section {
+    .has-dropdown > a:after {
+      border-color: transparent transparent transparent $header-text-color;
+    }
+  }
+
+  #donate-button {
+    a {
+      background: $color-red-pri;
+      color: #FFF;
+      &:hover {
+        background-color: $color-red-sec;
+      }
+    }
+  }
+}
+
+// Full-width menu styles
+@media #{$topbar-media-query} {
+  #site-header {
+    height: $header-height;
+    padding: 0 45px;
+    box-shadow: 0 1px 1px rgba($color-gray-light, 0.3);
+
+    .top-bar {
+      background: $header-bg;
+
+      .title-area {
+        position: absolute;
+        margin-top: 13px;
+        z-index: 2;
+        a {
+          background: $logo no-repeat;
+          height: 100%;
+          width: $logo-width;
+          text-indent: -9999px;
+        }
+      }
+    }
+
+    #main-menu {
+      width: 100%;
+      background: none;
+      padding-left: $logo-width + 25;
+      z-index: 1;
+    }
 
     li:hover {
       a {
@@ -40,8 +87,6 @@ $logo-width: 72px;
 
     a {
       padding: 0 25px;
-      color: $header-text-color;
-      background-color: $header-bg;
       font-size: $menu-fsize;
       line-height: $header-height;
       font-weight: bold;
@@ -70,21 +115,14 @@ $logo-width: 72px;
       }
     }
 
-    // Donate button, always at the end
-    /*.last.leaf {
+    #donate-button {
       float: right;
       a {
         margin-top: 16px;
         line-height: $header-height - 32px;
         padding: 0 30px;
-        background-color: $color-red-pri;
-        color: #FFF;
         border-radius: 3px;
-
-        &:hover {
-          background-color: $color-red-sec;
-        }
       }
-    }*/
+    }
   }
 }
