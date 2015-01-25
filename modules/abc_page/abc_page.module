@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ABC Basic Page feature.
+ */
+
+include_once 'abc_page.features.inc';

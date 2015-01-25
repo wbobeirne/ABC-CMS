@@ -85,6 +85,10 @@ projects[libraries][version] = 2.2
 projects[media][subdir] = contrib
 projects[media][version] = 2.x-dev
 
+; Menu Attributes
+projects[menu_attributes][subdir] = contrib
+projects[menu_attributes][version] = 1.0-rc3
+
 ; Multiform
 projects[multiform][subdir] = contrib
 projects[multiform][version] = 1.1

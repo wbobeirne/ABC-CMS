@@ -32,6 +32,11 @@ dependencies[] = update
 ;* ABC costum modules *;
 ;**********************;
 
+dependencies[] = abc_basic
+dependencies[] = abc_home
+dependencies[] = abc_page
+dependencies[] = abc_users
+
 ;*******************;
 ;* Contrib modules *;
 ;*******************;
