@@ -3,6 +3,7 @@ $header-height: 80px;
 
 $logo: url('http://i.imgur.com/7IZCtvA.jpg');
 $logo-width: 72px;
+$logo-height: 52px;
 
 // All-size styles
 #site-header {
@@ -13,6 +14,10 @@ $logo-width: 72px;
     color: $header-text-color;
   }
 
+  li a:hover {
+    background-color: darken($header-bg, 5%);
+  }
+
   .top-bar {
     .name {
       .a { color: $color-blue-pri; }
@@ -20,14 +25,19 @@ $logo-width: 72px;
       .c { color: $color-red-pri; }
     }
 
-    .menu-icon span {
-      box-shadow: none;
-      &:after {
-        position: absolute;
-        content: "☰";
-        top: -1px;
-        right: -23px;
-        font-size: 15px;
+    .menu-icon {
+      a {
+        background: none;
+      }
+      span {
+        box-shadow: none;
+        &:after {
+          position: absolute;
+          content: "☰";
+          top: -1px;
+          right: -23px;
+          font-size: 15px;
+        }
       }
     }
   }
@@ -65,7 +75,7 @@ $logo-width: 72px;
         z-index: 2;
         a {
           background: $logo no-repeat;
-          height: 100%;
+          height: $logo-height;
           width: $logo-width;
           text-indent: -9999px;
         }
@@ -79,12 +89,6 @@ $logo-width: 72px;
       z-index: 1;
     }
 
-    li:hover {
-      a {
-        background-color: darken($header-bg, 5%);
-      }
-    }
-
     a {
       padding: 0 25px;
       font-size: $menu-fsize;
@@ -95,7 +99,12 @@ $logo-width: 72px;
       }
     }
 
+    li:hover a {
+      background-color: darken($header-bg, 5%);
+    }
+
     .dropdown {
+      background: none;
       a {
         font-weight: normal;
         line-height: 48px;

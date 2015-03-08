@@ -1,0 +1,94 @@
+$two-col-width: 680px;
+
+.node-type-grid {
+  .field-name-body {
+    margin: 40px auto 80px;
+    max-width: 520px;
+  }
+
+  .field-collection-container {
+    margin: 0;
+    border: none;
+    .action-links-field-collection-add {
+      display: none;
+    }
+  }
+
+  .field-name-field-grid-item {
+    margin: 0 -25px;
+    .field-collection-view {
+      position: relative;
+      display: inline-block;
+      width: 300px;
+      margin: 0 20px 60px;
+      padding: 0;
+      border: none;
+      .field-collection-view-links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.6);
+        border-bottom-left-radius: 4px;
+        @include transition(opacity 100ms ease);
+        a {
+          margin: 0;
+          padding: 10px 6px;
+          font-size: 13px;
+          color: #FFF;
+          opacity: 0.7;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      &:hover .field-collection-view-links {
+        opacity: 1;
+      }
+    }
+    .image {
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+    }
+    .field-name-field-title {
+      font-size: $minor-section-fsize;
+      line-height: $minor-section-lheight;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .field-name-field-description {
+      font-size: $body-fsize;
+      line-height: $body-lheight;
+    }
+    a {
+      font-size: $body-fsize;
+      line-height: $body-lheight;
+    }
+  }
+}
+
+@media screen and (max-width: $topbar-breakpoint) {
+  .node-type-grid {
+    .field-name-field-grid-item {
+      width: $two-col-width;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: $two-col-width) {
+  .node-type-grid {
+    .field-name-field-grid-item {
+      width: 100%;
+      margin: 0 auto;
+
+      .field-collection-view {
+        display: block;
+        width: auto;
+      }
+    }
+  }
+}

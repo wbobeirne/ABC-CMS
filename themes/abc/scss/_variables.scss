@@ -33,7 +33,7 @@ $base-font-size: 100% !default;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be a different size and not have it effect grid size too,
 // set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
-$em-base: 18px !default;
+$em-base: 16px !default;
 
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
@@ -1330,7 +1330,7 @@ $default-float: left;
 // Transitions and breakpoint styles
 
 // $topbar-transition-speed: 300ms;
-$topbar-breakpoint: 1060px !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint: 1020px !default; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Divider Styles
@@ -1342,3 +1342,4 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+

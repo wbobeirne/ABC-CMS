@@ -53,6 +53,10 @@ projects[features][version] = 2.3
 projects[fieldable_panels_panes][subdir] = contrib
 projects[fieldable_panels_panes][version] = 1.5
 
+; Field collection
+projects[field_collection][subdir] = contrib
+projects[field_collection][version] = 1.0-beta8
+
 ; Field group
 projects[field_group][subdir] = contrib
 projects[field_group][version] = 1.4

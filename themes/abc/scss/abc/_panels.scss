@@ -18,9 +18,9 @@
       left: 50%;
       bottom: 0;
       height: 2px;
-      width: 140px;
-      margin-left: -70px;
-      background: $color-gray-dark;
+      width: 210px;
+      margin-left: -105px;
+      background: $color-gray-light;
     }
   }
 
@@ -51,6 +51,14 @@
   }
   &.color-purple {
     background: $color-purple-pri;
+  }
+
+  &.title-only {
+    padding-bottom: 50px;
+    .pane-title {
+      font-size: $title-fsize;
+      line-height: $title-lheight;
+    }
   }
 }
 

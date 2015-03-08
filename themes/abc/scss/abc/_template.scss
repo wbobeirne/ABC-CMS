@@ -1,5 +1,22 @@
+#main-container {
+  position: relative;
+}
 #main {
   .buffered {
     margin-top: 40px;
   }
+}
+
+// Site message
+.l-messages {
+  .alert-box {
+    margin: 0;
+  }
+}
+
+// Admin tabs
+.tabs-container {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
