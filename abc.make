@@ -24,6 +24,7 @@ projects[chosen][version] = 2.0-alpha4
 ; CKEditor
 projects[ckeditor][subdir] = contrib
 projects[ckeditor][version] = 1.16
+projects[ckeditor][patch][2454933] = https://www.drupal.org/files/issues/Issue_2454933.patch
 
 ; Context
 projects[context][subdir] = contrib
