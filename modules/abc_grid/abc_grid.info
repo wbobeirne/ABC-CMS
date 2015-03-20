@@ -28,6 +28,7 @@ features[field_instance][] = node-grid-body
 features[field_instance][] = node-grid-field_color
 features[field_instance][] = node-grid-field_grid_item
 features[field_instance][] = node-grid-field_header_background
+features[image][] = grid_image
 features[node][] = grid
 features[variable][] = field_bundle_settings_node__grid
 features[variable][] = menu_options_grid

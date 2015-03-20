@@ -13,7 +13,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'access administration pages'.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'system',
   );
 
@@ -46,7 +48,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'access devel information'.
   $permissions['access devel information'] = array(
     'name' => 'access devel information',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'devel',
   );
 
@@ -73,14 +77,18 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'system',
   );
 
   // Exported permission: 'access site reports'.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'system',
   );
 
@@ -97,7 +105,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'system',
   );
 
@@ -134,6 +144,13 @@ function abc_users_user_default_permissions() {
     'name' => 'administer features',
     'roles' => array(),
     'module' => 'features',
+  );
+
+  // Exported permission: 'administer field collections'.
+  $permissions['administer field collections'] = array(
+    'name' => 'administer field collections',
+    'roles' => array(),
+    'module' => 'field_collection',
   );
 
   // Exported permission: 'administer fieldable panels panes'.
@@ -208,6 +225,15 @@ function abc_users_user_default_permissions() {
       'Editor' => 'Editor',
     ),
     'module' => 'menu',
+  );
+
+  // Exported permission: 'administer menu attributes'.
+  $permissions['administer menu attributes'] = array(
+    'name' => 'administer menu attributes',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'menu_attributes',
   );
 
   // Exported permission: 'administer modules'.
@@ -350,7 +376,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'system',
   );
 
@@ -436,6 +464,22 @@ function abc_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create files content'.
+  $permissions['create files content'] = array(
+    'name' => 'create files content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create grid content'.
+  $permissions['create grid content'] = array(
+    'name' => 'create grid content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
@@ -483,6 +527,22 @@ function abc_users_user_default_permissions() {
     'name' => 'delete any document files',
     'roles' => array(),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete any files content'.
+  $permissions['delete any files content'] = array(
+    'name' => 'delete any files content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any grid content'.
+  $permissions['delete any grid content'] = array(
+    'name' => 'delete any grid content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete any image files'.
@@ -541,6 +601,22 @@ function abc_users_user_default_permissions() {
     'name' => 'delete own document files',
     'roles' => array(),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own files content'.
+  $permissions['delete own files content'] = array(
+    'name' => 'delete own files content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own grid content'.
+  $permissions['delete own grid content'] = array(
+    'name' => 'delete own grid content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own image files'.
@@ -643,6 +719,22 @@ function abc_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any files content'.
+  $permissions['edit any files content'] = array(
+    'name' => 'edit any files content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any grid content'.
+  $permissions['edit any grid content'] = array(
+    'name' => 'edit any grid content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -703,6 +795,22 @@ function abc_users_user_default_permissions() {
     'name' => 'edit own document files',
     'roles' => array(),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own files content'.
+  $permissions['edit own files content'] = array(
+    'name' => 'edit own files content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own grid content'.
+  $permissions['edit own grid content'] = array(
+    'name' => 'edit own grid content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own image files'.
@@ -821,6 +929,13 @@ function abc_users_user_default_permissions() {
     'name' => 'use ipe with page manager',
     'roles' => array(),
     'module' => 'panels',
+  );
+
+  // Exported permission: 'use media wysiwyg'.
+  $permissions['use media wysiwyg'] = array(
+    'name' => 'use media wysiwyg',
+    'roles' => array(),
+    'module' => 'media_wysiwyg',
   );
 
   // Exported permission: 'use page manager'.
