@@ -37,6 +37,13 @@ body {
     line-height: $body-lheight;
   }
 
+  a {
+    color: $color-blue-pri;
+    &:hover {
+      color: $color-blue-sec;
+    }
+  }
+
   blockquote {
     position: relative;
     float: right;
