@@ -156,9 +156,6 @@ projects[diff][version] = 3.2
 ;* Theme *;
 ;*********;
 
-projects[adminimal_theme][type] = theme
-projects[adminimal_theme][version] = 1.19
-
 projects[zurb-foundation][type] = theme
 projects[zurb-foundation][version] = 4.0
 projects[zurb-foundation][patch][2205041] = https://www.drupal.org/files/issues/zurb-foundation-array-2-string-2205041-18.patch

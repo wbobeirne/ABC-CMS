@@ -1,0 +1,48 @@
+.node-files {
+  margin: auto;
+  max-width: 630px;
+
+  .field-collection-container,
+  .field-collection-view {
+    margin: 0;
+    border: 0;
+  }
+  .field-name-field-file-set {
+    .entity {
+      margin-bottom: 35px;
+    }
+    .field-name-field-title {
+      font-size: $minor-section-fsize;
+      line-height: $minor-section-lheight;
+      font-weight: 600;
+      color: $color-gray-dark;
+      margin-bottom: 20px;
+    }
+    div.file {
+      padding: 15px 0;
+      border-bottom: 1px solid $color-gray-lighter;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+      .file-icon,
+      .file-size {
+        display: none;
+      }
+      a {
+        font-size: $body-fsize;
+        line-height: $body-lheight;
+        color: $color-link;
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
+    .text-content {
+      float: right;
+      font-size: $menu-fsize;
+      line-height: $body-lheight;
+      color: $color-gray-light;
+    }
+  }
+}

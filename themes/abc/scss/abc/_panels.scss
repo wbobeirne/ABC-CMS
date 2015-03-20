@@ -31,6 +31,20 @@
     }
   }
 
+  &.has-bg {
+    min-height: 450px;
+    padding-top: 90px;
+    .pane-title,
+    .pane-content {
+      color: #FFF;
+      text-shadow: 1px 1px 1px $color-gray-darkest;
+    }
+    .pane-title:after {
+      background-color: #FFF;
+      box-shadow: 1px 1px 1px $color-gray-darkest;
+    }
+  }
+
   &.has-color {
     .pane-title,
     .pane-content {

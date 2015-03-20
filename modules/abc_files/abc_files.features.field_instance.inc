@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * abc_page.features.field_instance.inc
+ * abc_files.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function abc_page_field_default_field_instances() {
+function abc_files_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'
-  $field_instances['node-page-body'] = array(
-    'bundle' => 'page',
+  // Exported field_instance: 'node-files-body'
+  $field_instances['node-files-body'] = array(
+    'bundle' => 'files',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -50,23 +50,22 @@ function abc_page_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-page-field_color'
-  $field_instances['node-page-field_color'] = array(
-    'bundle' => 'page',
+  // Exported field_instance: 'node-files-field_color'
+  $field_instances['node-files-field_color'] = array(
+    'bundle' => 'files',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -91,21 +90,72 @@ function abc_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_header_background'
-  $field_instances['node-page-field_header_background'] = array(
-    'bundle' => 'page',
+  // Exported field_instance: 'node-files-field_files'
+  $field_instances['node-files-field_files'] = array(
+    'bundle' => 'files',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_table',
+        'weight' => 3,
+      ),
+      'teaser' => array(
         'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_files',
+    'label' => 'Files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => '',
+      'file_extensions' => 'doc docx log msg odt rtf txt wpd csv dat key pps ppt pptx xml tar zip 7z wav mp3 mp4 aac flac avi swf wmv mpg png jpeg jpg tiff gif tif psd svg pdf xlr xls xlsx html xhtml htm',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
         ),
-        'type' => 'image',
-        'weight' => 2,
+        'allowed_types' => array(
+          'audio' => 'audio',
+          'document' => 'document',
+          'image' => 'image',
+          'video' => 'video',
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-files-field_header_background'
+  $field_instances['node-files-field_header_background'] = array(
+    'bundle' => 'files',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -157,6 +207,7 @@ function abc_page_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Color');
+  t('Files');
   t('Header Background');
 
   return $field_instances;

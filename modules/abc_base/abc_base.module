@@ -48,6 +48,13 @@ function abc_base_preprocess_panels_pane(&$vars) {
       $panel->title = $node->title;
     }
 
+    // Use image from node if provided
+    if ($node && $node->field_header_background) {
+      $img = image_style_url('wide_splash', $node->field_header_background['und'][0]['uri']);
+      $vars['classes_array'][] = 'has-bg';
+      $vars['attributes_array']['style'] = "background-image: url('" . $img . "');";
+    }
+
     // Use color field from node if not available, add class.
     $color_field = field_get_items('fieldable_panels_pane', $panel, 'field_color');
     if (!$color_field && $node && $node->field_color) {

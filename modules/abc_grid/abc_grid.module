@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ABC Grid feature.
+ */
+
+include_once 'abc_grid.features.inc';

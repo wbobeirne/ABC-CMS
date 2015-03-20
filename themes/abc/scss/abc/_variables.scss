@@ -9,6 +9,7 @@ $topbar-breakpoint: 1020px;
 $color-gray-darkest: #2A2F35;
 $color-gray-dark: #474D59;
 $color-gray-light: #AEB4BF;
+$color-gray-lighter: #EBEDF2;
 $color-gray-lightest: #FAFBFD;
 
 $color-blue-pri: #00A2E4;
@@ -22,6 +23,9 @@ $color-gold-sec: lighten($color-gold-pri, 10%);
 
 $color-purple-pri: #6327A3;
 $color-purple-sec: lighten($color-purple-pri, 10%);
+
+$color-link: $color-blue-pri;
+$color-link-hover: $color-blue-sec;
 
 // Component colors
 $header-bg: #FFF;
