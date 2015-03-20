@@ -2796,6 +2796,12 @@ body.page-admin-structure-views-view #views-ui-edit-display-form #edit-options #
      ABC CUSTOM OVERRIDES
 ********************************/
 
+#main-content {
+  display: block;
+  margin: 0;
+  max-width: 1040px;
+}
+
 .node-form .form-item-title input {
   font-size: 26px;
 }
