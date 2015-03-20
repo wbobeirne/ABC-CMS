@@ -14,7 +14,7 @@ function abc_base_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Format\',\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'-\',\'Blockquote\']
+    [\'Format\',\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'-\',\'Blockquote\',\'Media\']
 ]',
         'expand' => 't',
         'default' => 't',

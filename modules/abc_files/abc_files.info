@@ -38,6 +38,7 @@ features[file_display][] = document__default__file_field_file_url_plain
 features[file_display][] = document__default__file_field_media_large_icon
 features[file_type][] = application
 features[node][] = files
+features[variable][] = date_format_file
 features[variable][] = field_bundle_settings_node__files
 features[variable][] = menu_options_files
 features[variable][] = menu_parent_files
