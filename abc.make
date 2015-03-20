@@ -6,7 +6,7 @@ core = 7.x
 ;***************;
 
 projects[drupal][type] = core
-projects[drupal][version] = 7.34
+projects[drupal][version] = 7.35
 
 
 ;*******************;
@@ -31,7 +31,7 @@ projects[context][version] = 3.6
 
 ; Ctools
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.5
+projects[ctools][version] = 1.7
 
 ; Date
 projects[date][subdir] = contrib
@@ -39,7 +39,7 @@ projects[date][version] = 2.8
 
 ; Entity
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.5
+projects[entity][version] = 1.6
 
 ; Entity reference
 projects[entityreference][subdir] = contrib
@@ -47,7 +47,7 @@ projects[entityreference][version] = 1.1
 
 ; Features
 projects[features][subdir] = contrib
-projects[features][version] = 2.3
+projects[features][version] = 2.4
 
 ; Fieldable panels panes
 projects[fieldable_panels_panes][subdir] = contrib
@@ -75,7 +75,7 @@ projects[imagemagick][version] = 1.0
 
 ; jQuery Update
 projects[jquery_update][subdir] = contrib
-projects[jquery_update][version] = 2.4
+projects[jquery_update][version] = 2.5
 
 ; Link
 projects[link][subdir] = contrib
@@ -99,12 +99,11 @@ projects[multiform][version] = 1.1
 
 ; Navbar
 projects[navbar][subdir] = contrib
-projects[navbar][version] = 1.5
-;projects[navbar][patch][1875254] = http://drupal.org/files/navbar_has_mismatching_closing_tag_1875254_1.patch
+projects[navbar][version] = 1.6
 
 ; Panels
 projects[panels][subdir] = contrib
-projects[panels][version] = 3.4
+projects[panels][version] = 3.5
 
 ; Pathauto
 projects[pathauto][subdir] = contrib
@@ -124,11 +123,11 @@ projects[strongarm][version] = 2.0
 
 ; Token
 projects[token][subdir] = contrib
-projects[token][version] = 1.5
+projects[token][version] = 1.6
 
 ; Views
 projects[views][subdir] = contrib
-projects[views][version] = 3.8
+projects[views][version] = 3.10
 
 ; Views Bulk Operations
 projects[views_bulk_operations][subdir] = contrib
