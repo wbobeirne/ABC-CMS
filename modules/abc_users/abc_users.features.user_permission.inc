@@ -934,7 +934,10 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'use media wysiwyg'.
   $permissions['use media wysiwyg'] = array(
     'name' => 'use media wysiwyg',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'media_wysiwyg',
   );
 
