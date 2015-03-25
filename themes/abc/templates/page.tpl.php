@@ -215,7 +215,7 @@
 
   <!--.l-footer-->
   <footer id="site-footer" class="l-footer" role="contentinfo">
-    <?php if ($footer_menu): ?>
+    <?php if (!empty($footer_menu)): ?>
       <?php print($footer_menu); ?>
     <?php endif; ?>
   </footer>

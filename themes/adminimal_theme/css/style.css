@@ -2796,6 +2796,7 @@ body.page-admin-structure-views-view #views-ui-edit-display-form #edit-options #
      ABC CUSTOM OVERRIDES
 ********************************/
 
+/* Node form */
 .node-form .form-item-title input {
   font-size: 26px;
 }
@@ -2819,4 +2820,11 @@ body.page-admin-structure-views-view #views-ui-edit-display-form #edit-options #
   font-weight: 300;
   color: #AAA;
 }
+
+/* Media module */
+#media-browser-tabset ul.tabs.primary li a:link {
+  outline: none;
+  line-height: 16px;
+}
+
 

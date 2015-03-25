@@ -7,6 +7,11 @@
   }
 }
 
+// Default page title
+#page-title {
+  display: inline-block;
+}
+
 // Site message
 .l-messages {
   .alert-box {
@@ -19,4 +24,49 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 100;
+  .button {
+    margin: 0;
+  }
+}
+
+// Login page
+.page-user {
+  #main {
+    margin: auto;
+    max-width: 1000px;
+  }
+  &.not-logged-in {
+    #main-inner > .row,
+    #main {
+      margin: auto;
+      max-width: 600px;
+    }
+    form {
+      padding: 0 20px;
+      .description {
+        display: none;
+      }
+      label {
+        font-size: 24px;
+        font-weight: 300;
+      }
+      input {
+        font-size: 18px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+// Small styles
+@media screen and (max-width: $topbar-breakpoint) {
+  .tabs-container {
+    position: relative;
+    background: #E9E9E9;
+    box-shadow: 0 -1px 0 0px #D0D0D0 inset;
+  }
 }

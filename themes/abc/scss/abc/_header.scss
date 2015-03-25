@@ -7,6 +7,8 @@ $logo-height: 52px;
 
 // All-size styles
 #site-header {
+  box-shadow: 0 1px 1px rgba($color-gray-light, 0.3);
+
   .top-bar,
   ul,
   a {
@@ -23,6 +25,9 @@ $logo-height: 52px;
       .a { color: $color-blue-pri; }
       .b { color: $color-gold-pri; }
       .c { color: $color-red-pri; }
+      a {
+        background-color: $header-bg;
+      }
     }
 
     .menu-icon {
@@ -64,7 +69,6 @@ $logo-height: 52px;
   #site-header {
     height: $header-height;
     padding: 0 45px;
-    box-shadow: 0 1px 1px rgba($color-gray-light, 0.3);
 
     .top-bar {
       background: $header-bg;
