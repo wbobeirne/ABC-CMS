@@ -38,8 +38,13 @@ function abc_base_entity_info_alter(&$entity_info) {
  * Implements hook_preprocess_panels_pane().
  */
 function abc_base_preprocess_panels_pane(&$vars) {
+  $bundle = '';
+  if (is_array($vars['content']) && $vars['content']['#bundle']) {
+    $bundle = $vars['content']['#bundle'];
+  }
+
   // Wide title alterations
-  if ($vars['content']['#bundle'] == 'wide_header') {
+  if ($bundle == 'wide_header') {
     $node = menu_get_object();
     $panel = &$vars['content']['#fieldable_panels_pane'];
 
@@ -49,7 +54,7 @@ function abc_base_preprocess_panels_pane(&$vars) {
     }
 
     // Use image from node if provided
-    if ($node && $node->field_header_background) {
+    if ($node && isset($node->field_header_background) && $node->field_header_background) {
       $img = image_style_url('wide_splash', $node->field_header_background['und'][0]['uri']);
       $vars['classes_array'][] = 'has-bg';
       $vars['attributes_array']['style'] = "background-image: url('" . $img . "');";
@@ -57,7 +62,7 @@ function abc_base_preprocess_panels_pane(&$vars) {
 
     // Use color field from node if not available, add class.
     $color_field = field_get_items('fieldable_panels_pane', $panel, 'field_color');
-    if (!$color_field && $node && $node->field_color) {
+    if (!$color_field && $node && isset($node->field_color) && $node->field_color) {
       $color_field = $node->field_color['und'];
     }
     if ($color_field) {
@@ -66,13 +71,13 @@ function abc_base_preprocess_panels_pane(&$vars) {
     }
 
     // Add class if there is no content.
-    if (!$panel->field_content) {
+    if (!isset($panel->field_content) && $panel->field_content) {
       $vars['classes_array'][] = 'title-only';
     }
   }
 
   // Wide image rotator alterations
-  if ($vars['content']['#bundle'] == 'wide_image_rotator') {
+  if ($bundle == 'wide_image_rotator') {
     drupal_add_js(drupal_get_path('module', 'abc_base') . '/js/wide_image_rotator.js');
   }
 }

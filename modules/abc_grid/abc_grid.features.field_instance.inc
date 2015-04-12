@@ -48,7 +48,8 @@ function abc_grid_field_default_field_instances() {
   $field_instances['field_collection_item-field_grid_item-field_image'] = array(
     'bundle' => 'field_grid_item',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Minimum size of 300x260. Ideal aspect ratio is ~6:5.
+',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -64,7 +65,7 @@ function abc_grid_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_image',
     'label' => 'Image',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -72,7 +73,7 @@ function abc_grid_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '300x260',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -169,7 +170,7 @@ function abc_grid_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_title',
     'label' => 'Title',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -313,7 +314,7 @@ function abc_grid_field_default_field_instances() {
   $field_instances['node-grid-field_header_background'] = array(
     'bundle' => 'grid',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Minimum of 900x300. Ideal aspect ratio is ~3:1.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -339,7 +340,7 @@ function abc_grid_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '900x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -374,6 +375,9 @@ function abc_grid_field_default_field_instances() {
   t('Grid Item');
   t('Header Background');
   t('Image');
+  t('Minimum of 900x300. Ideal aspect ratio is ~3:1.');
+  t('Minimum size of 300x260. Ideal aspect ratio is ~6:5.
+');
   t('More Link');
   t('Title');
 

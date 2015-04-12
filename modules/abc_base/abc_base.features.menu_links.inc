@@ -17,7 +17,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Annual Report & Financials',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_annual-report--financials:<front>',
     ),
     'module' => 'menu',
@@ -61,7 +63,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Events',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_events:<front>',
     ),
     'module' => 'menu',
@@ -80,7 +84,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Family Programs',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_family-programs:<front>',
     ),
     'module' => 'menu',
@@ -99,7 +105,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Get involved',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_get-involved:<front>',
     ),
     'module' => 'menu',
@@ -117,7 +125,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'History',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_history:node/1',
     ),
     'module' => 'menu',
@@ -136,7 +146,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Impact',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_impact:<front>',
     ),
     'module' => 'menu',
@@ -154,7 +166,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Mental Health',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_mental-health:<front>',
     ),
     'module' => 'menu',
@@ -166,25 +180,6 @@ function abc_base_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_programs:<front>',
   );
-  // Exported menu link: main-menu_mission:<front>
-  $menu_links['main-menu_mission:<front>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Mission',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_mission:<front>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_who-we-are:<front>',
-  );
   // Exported menu link: main-menu_news--events:<front>
   $menu_links['main-menu_news--events:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -192,7 +187,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'News & events',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_news--events:<front>',
     ),
     'module' => 'menu',
@@ -210,7 +207,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'News Archive',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_news-archive:<front>',
     ),
     'module' => 'menu',
@@ -229,7 +228,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Our Model',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_our-model:<front>',
     ),
     'module' => 'menu',
@@ -248,7 +249,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Our Stories',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_our-stories:<front>',
     ),
     'module' => 'menu',
@@ -267,7 +270,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Our Team',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_our-team:<front>',
     ),
     'module' => 'menu',
@@ -286,7 +291,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Programs',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_programs:<front>',
     ),
     'module' => 'menu',
@@ -304,7 +311,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Results',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_results:<front>',
     ),
     'module' => 'menu',
@@ -323,7 +332,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Supportive Housing',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_supportive-housing:<front>',
     ),
     'module' => 'menu',
@@ -342,7 +353,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'What\'s Happening',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_whats-happening:<front>',
     ),
     'module' => 'menu',
@@ -361,7 +374,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Who we are',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_who-we-are:<front>',
     ),
     'module' => 'menu',
@@ -379,7 +394,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Youth Programs',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_youth-programs:<front>',
     ),
     'module' => 'menu',
@@ -402,7 +419,7 @@ function abc_base_menu_default_menu_links() {
       'identifier' => 'menu-footer-menu_careers:<front>',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
@@ -416,7 +433,9 @@ function abc_base_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Contact Us',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'menu-footer-menu_contact-us:<front>',
     ),
     'module' => 'menu',
@@ -439,7 +458,6 @@ function abc_base_menu_default_menu_links() {
   t('History');
   t('Impact');
   t('Mental Health');
-  t('Mission');
   t('News & events');
   t('News Archive');
   t('Our Model');

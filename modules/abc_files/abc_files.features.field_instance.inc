@@ -307,7 +307,7 @@ function abc_files_field_default_field_instances() {
   $field_instances['node-files-field_header_background'] = array(
     'bundle' => 'files',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Minimum of 900x300. Ideal aspect ratio is ~3:1.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -333,7 +333,7 @@ function abc_files_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '900x300',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -369,6 +369,7 @@ function abc_files_field_default_field_instances() {
   t('File');
   t('File Set');
   t('Header Background');
+  t('Minimum of 900x300. Ideal aspect ratio is ~3:1.');
   t('Title');
 
   return $field_instances;

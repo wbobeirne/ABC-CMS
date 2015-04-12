@@ -60,7 +60,6 @@ features[menu_links][] = main-menu_get-involved:<front>
 features[menu_links][] = main-menu_history:node/1
 features[menu_links][] = main-menu_impact:<front>
 features[menu_links][] = main-menu_mental-health:<front>
-features[menu_links][] = main-menu_mission:<front>
 features[menu_links][] = main-menu_news--events:<front>
 features[menu_links][] = main-menu_news-archive:<front>
 features[menu_links][] = main-menu_our-model:<front>

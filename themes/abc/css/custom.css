@@ -7561,15 +7561,16 @@ a.th {
 .pane-bundle-wide-header {
   padding: 50px 0 90px;
   text-align: center;
+  background-size: cover;
 }
-/* line 8, ../scss/abc/_panels.scss */
+/* line 9, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header .pane-title {
   position: relative;
   padding-bottom: 20px;
   margin: 0 0 10px;
   font-size: 1.4em;
 }
-/* line 14, ../scss/abc/_panels.scss */
+/* line 15, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header .pane-title:after {
   content: '';
   position: absolute;
@@ -7581,72 +7582,72 @@ a.th {
   margin-left: -105px;
   background: #AEB4BF;
 }
-/* line 27, ../scss/abc/_panels.scss */
+/* line 28, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header .field-name-field-content {
   font-size: 2.5em;
 }
-/* line 29, ../scss/abc/_panels.scss */
+/* line 30, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header .field-name-field-content p {
   margin: 0;
 }
-/* line 34, ../scss/abc/_panels.scss */
+/* line 35, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-bg {
-  min-height: 450px;
-  padding-top: 90px;
+  padding-top: 10%;
+  padding-bottom: 15%;
 }
-/* line 37, ../scss/abc/_panels.scss */
+/* line 38, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-bg .pane-title,
 .pane-bundle-wide-header.has-bg .pane-content {
   color: #FFF;
   text-shadow: 1px 1px 1px #2A2F35;
 }
-/* line 42, ../scss/abc/_panels.scss */
+/* line 43, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-bg .pane-title:after {
   background-color: #FFF;
   box-shadow: 1px 1px 1px #2A2F35;
 }
-/* line 49, ../scss/abc/_panels.scss */
+/* line 50, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-color .pane-title,
 .pane-bundle-wide-header.has-color .pane-content {
   color: #FFF;
 }
-/* line 53, ../scss/abc/_panels.scss */
+/* line 54, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-color .pane-title:after {
-  background: rgba(250, 251, 253, 0.5);
+  background-color: rgba(250, 251, 253, 0.5);
 }
-/* line 57, ../scss/abc/_panels.scss */
+/* line 58, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-blue {
-  background: #00A2E4;
+  background-color: #00A2E4;
 }
-/* line 60, ../scss/abc/_panels.scss */
+/* line 61, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-red {
-  background: #F93E32;
+  background-color: #F93E32;
 }
-/* line 63, ../scss/abc/_panels.scss */
+/* line 64, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-gold {
-  background: #FECC01;
+  background-color: #FECC01;
 }
-/* line 66, ../scss/abc/_panels.scss */
+/* line 67, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-purple {
-  background: #6327A3;
+  background-color: #6327A3;
 }
-/* line 70, ../scss/abc/_panels.scss */
+/* line 71, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.title-only {
   padding-bottom: 50px;
 }
-/* line 72, ../scss/abc/_panels.scss */
+/* line 73, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.title-only .pane-title {
   font-size: 2.5em;
   line-height: 52px;
 }
 
-/* line 81, ../scss/abc/_panels.scss */
+/* line 82, ../scss/abc/_panels.scss */
 .pane-bundle-wide-image-rotator {
   position: relative;
   padding-top: 35%;
   max-height: 460px;
 }
-/* line 86, ../scss/abc/_panels.scss */
+/* line 87, ../scss/abc/_panels.scss */
 .pane-bundle-wide-image-rotator .field-name-field-images {
   position: absolute;
   top: 0;
@@ -7655,7 +7656,7 @@ a.th {
   height: 100%;
   overflow: hidden;
 }
-/* line 94, ../scss/abc/_panels.scss */
+/* line 95, ../scss/abc/_panels.scss */
 .pane-bundle-wide-image-rotator .field-name-field-images img {
   position: absolute;
   top: 0;
