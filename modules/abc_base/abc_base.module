@@ -71,7 +71,7 @@ function abc_base_preprocess_panels_pane(&$vars) {
     }
 
     // Add class if there is no content.
-    if (!isset($panel->field_content) && $panel->field_content) {
+    if (!isset($panel->field_content) || !$panel->field_content) {
       $vars['classes_array'][] = 'title-only';
     }
   }
