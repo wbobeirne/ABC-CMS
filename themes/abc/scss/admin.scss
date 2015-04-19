@@ -1,0 +1,121 @@
+.panels-ipe {
+  // In page editor
+  .panels-ipe-newblock {
+    box-shadow: none;
+  }
+  .panels-ipe-linkbar {
+    li {
+      display: inline-block;
+      margin-left: 5px;
+      list-style: none;
+    }
+
+    .style {
+      display: none;
+    }
+  }
+  .panels-ipe-dragbar-admin-title {
+    padding-left: 10px;
+    line-height: 2.4em;
+  }
+
+  // Modals
+  .ctools-modal-content {
+    table {
+      width: 100%;
+    }
+    .modal-content {
+      padding: 1em 2em;
+      overflow: hidden;
+      width: 100% !important;
+    }
+    .modal-header {
+      line-height: 2.6em;
+      .close {
+        width: 16px;
+        height: 16px;
+        margin-top: 0.6em;
+        padding: 0;
+        text-indent: -9999px;
+      } 
+    }
+
+    // Add content modal
+    .panels-add-content-modal {
+      margin: -1em -2em;
+      padding-top: 0;
+
+      .panels-categories-description {
+        color: #AAA;
+        padding: 1em;
+        font-size: 24px;
+        line-height: 28px;
+        color: #AAA;
+      }
+
+      .panels-section-columns {
+        width: 100%;
+        padding: 1em;
+      }
+      .content-type-button a {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        img {
+          vertical-align: top;
+          margin-top: 2px;
+          border: 0;
+        }
+        span {
+          padding-left: 4px;
+          position: static;
+        }
+      }
+    }
+
+    // Form elements
+    form {
+      button {
+        margin-bottom: 0;
+      }
+    }
+    .form-item-title {
+      input {
+        font-size: 20px;
+      }
+    }
+
+    .text-format-wrapper {
+      position: relative;
+      .ckeditor_links {
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+      }
+    }
+    .filter-wrapper {
+      padding-top: 2em;
+      .form-item {
+        margin-top: 0;
+      }
+    }
+
+    // Hide unnecessary form elements
+    .form-item-revision,
+    #edit-log-wrapper,
+    .form-item-view-mode,
+    .form-item-link,
+    .form-item-reusable,
+    form > div > .description {
+      display: none !important;
+    }
+  }
+
+  // Bottom bar
+  #panels-ipe-control-container {
+    padding: 9px 0;
+  }
+  #panels-ipe-edit-control-form {
+    margin: 0.3em 0.5em;
+  }
+}

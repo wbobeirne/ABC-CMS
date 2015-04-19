@@ -5,3 +5,30 @@
  */
 
 include_once 'abc_home.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function abc_home_entity_info_alter(&$entity_info) {
+  $entity_info['fieldable_panels_pane']['bundles']['homepage_block_custom'] = array(
+    'label' => t('Homepage Block (custom)'),
+    'pane category' => t('ABC'),
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/homepage_custom_block',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+
+  $entity_info['fieldable_panels_pane']['bundles']['homepage_block_node'] = array(
+    'label' => t('Homepage Block (node)'),
+    'pane category' => t('ABC'),
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/homepage_block_node',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}

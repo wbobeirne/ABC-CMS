@@ -12,7 +12,7 @@ include_once 'abc_base.features.inc';
 function abc_base_entity_info_alter(&$entity_info) {
   $entity_info['fieldable_panels_pane']['bundles']['wide_header'] = array(
     'label' => t('Wide Header'),
-    'pane category' => t('ABC - General'),
+    'pane category' => t('ABC'),
     'admin' => array(
       'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
       'bundle argument' => 4,
@@ -23,7 +23,7 @@ function abc_base_entity_info_alter(&$entity_info) {
 
   $entity_info['fieldable_panels_pane']['bundles']['wide_image_rotator'] = array(
     'label' => t('Wide Image Rotator'),
-    'pane category' => t('ABC - General'),
+    'pane category' => t('ABC'),
     'admin' => array(
       'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
       'bundle argument' => 4,

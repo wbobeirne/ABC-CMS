@@ -1,0 +1,119 @@
+/* line 3, ../scss/admin.scss */
+.panels-ipe .panels-ipe-newblock {
+  box-shadow: none;
+}
+/* line 7, ../scss/admin.scss */
+.panels-ipe .panels-ipe-linkbar li {
+  display: inline-block;
+  margin-left: 5px;
+  list-style: none;
+}
+/* line 13, ../scss/admin.scss */
+.panels-ipe .panels-ipe-linkbar .style {
+  display: none;
+}
+/* line 17, ../scss/admin.scss */
+.panels-ipe .panels-ipe-dragbar-admin-title {
+  padding-left: 10px;
+  line-height: 2.4em;
+}
+/* line 24, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content table {
+  width: 100%;
+}
+/* line 27, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .modal-content {
+  padding: 1em 2em;
+  overflow: hidden;
+  width: 100% !important;
+}
+/* line 32, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .modal-header {
+  line-height: 2.6em;
+}
+/* line 34, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .modal-header .close {
+  width: 16px;
+  height: 16px;
+  margin-top: 0.6em;
+  padding: 0;
+  text-indent: -9999px;
+}
+/* line 44, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .panels-add-content-modal {
+  margin: -1em -2em;
+  padding-top: 0;
+}
+/* line 48, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .panels-add-content-modal .panels-categories-description {
+  color: #AAA;
+  padding: 1em;
+  font-size: 24px;
+  line-height: 28px;
+  color: #AAA;
+}
+/* line 56, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .panels-add-content-modal .panels-section-columns {
+  width: 100%;
+  padding: 1em;
+}
+/* line 60, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .panels-add-content-modal .content-type-button a {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+/* line 64, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .panels-add-content-modal .content-type-button a img {
+  vertical-align: top;
+  margin-top: 2px;
+  border: 0;
+}
+/* line 69, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .panels-add-content-modal .content-type-button a span {
+  padding-left: 4px;
+  position: static;
+}
+/* line 78, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content form button {
+  margin-bottom: 0;
+}
+/* line 83, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .form-item-title input {
+  font-size: 20px;
+}
+/* line 88, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .text-format-wrapper {
+  position: relative;
+}
+/* line 90, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .text-format-wrapper .ckeditor_links {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+/* line 96, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .filter-wrapper {
+  padding-top: 2em;
+}
+/* line 98, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .filter-wrapper .form-item {
+  margin-top: 0;
+}
+/* line 104, ../scss/admin.scss */
+.panels-ipe .ctools-modal-content .form-item-revision,
+.panels-ipe .ctools-modal-content #edit-log-wrapper,
+.panels-ipe .ctools-modal-content .form-item-view-mode,
+.panels-ipe .ctools-modal-content .form-item-link,
+.panels-ipe .ctools-modal-content .form-item-reusable,
+.panels-ipe .ctools-modal-content form > div > .description {
+  display: none !important;
+}
+/* line 115, ../scss/admin.scss */
+.panels-ipe #panels-ipe-control-container {
+  padding: 9px 0;
+}
+/* line 118, ../scss/admin.scss */
+.panels-ipe #panels-ipe-edit-control-form {
+  margin: 0.3em 0.5em;
+}
