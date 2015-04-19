@@ -13,7 +13,7 @@
           <ul class="title-area">
             <li class="name">
               <h1>
-                <a href="/" rel="home" title="ABC Home">
+                <a href="<?php url('front') ?>" rel="home" title="ABC Home">
                   <span class="a">A</span><!--
                --><span class="b">B</span><!--
                --><span class="c">C</span>
@@ -134,8 +134,6 @@
 
       <div class="row">
         <div class="large-12 columns">
-          <!-- <?php if ($breadcrumb): print $breadcrumb; endif; ?> -->
-
           <?php if ($title && !$is_front): ?>
             <?php print render($title_prefix); ?>
             <h1 id="page-title" class="title"><?php print $title; ?></h1>

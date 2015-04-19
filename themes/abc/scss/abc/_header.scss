@@ -1,13 +1,25 @@
 // Styles pertaining to the sitewide top bar
-$header-height: 80px;
+$header-height-mobile: 45px;
+$header-height-desktop: 80px;
 
 $logo: url('http://i.imgur.com/7IZCtvA.jpg');
 $logo-width: 72px;
 $logo-height: 52px;
 
 // All-size styles
+.page {
+  position: relative;
+  padding-top: $header-height-mobile;
+}
 #site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height-mobile;
   box-shadow: 0 1px 1px rgba($color-gray-light, 0.3);
+  background: $header-bg;
+  z-index: 1000;
 
   .top-bar,
   ul,
@@ -36,11 +48,12 @@ $logo-height: 52px;
       }
       span {
         box-shadow: none;
+        padding-right: 4px;
         &:after {
           position: absolute;
           content: "☰";
           top: -1px;
-          right: -23px;
+          right: -28px;
           font-size: 15px;
         }
       }
@@ -66,8 +79,11 @@ $logo-height: 52px;
 
 // Full-width menu styles
 @media #{$topbar-media-query} {
+  .page {
+    padding-top: $header-height-desktop;
+  }
   #site-header {
-    height: $header-height;
+    height: $header-height-desktop;
     padding: 0 45px;
 
     .top-bar {
@@ -96,7 +112,7 @@ $logo-height: 52px;
     a {
       padding: 0 25px;
       font-size: $menu-fsize;
-      line-height: $header-height;
+      line-height: $header-height-desktop;
       font-weight: bold;
       &:after {
         display: none;
@@ -132,10 +148,21 @@ $logo-height: 52px;
       float: right;
       a {
         margin-top: 16px;
-        line-height: $header-height - 32px;
+        line-height: $header-height-desktop - 32px;
         padding: 0 30px;
         border-radius: 3px;
       }
     }
+  }
+}
+
+// Disable pinning for admin
+body.navbar-administration {
+  .page {
+    padding: 0;
+  }
+  #site-header {
+    position: relative;
+    z-index: inherit;
   }
 }

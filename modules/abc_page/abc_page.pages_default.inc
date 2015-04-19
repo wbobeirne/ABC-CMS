@@ -17,7 +17,7 @@ function abc_page_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -29;
+  $handler->weight = -3;
   $handler->conf = array(
     'title' => 'Basic Page',
     'no_blocks' => 0,
@@ -110,7 +110,7 @@ function abc_page_default_page_manager_handlers() {
     $pane->uuid = '1d90a00a-ea92-4679-a0be-0ebcf297bccf';
     $display->content['new-1d90a00a-ea92-4679-a0be-0ebcf297bccf'] = $pane;
     $display->panels['top'][0] = 'new-1d90a00a-ea92-4679-a0be-0ebcf297bccf';
-  $display->hide_title = PANELS_TITLE_PANE;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context'] = $handler;

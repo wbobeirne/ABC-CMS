@@ -7415,141 +7415,160 @@ a.th {
     box-shadow: 0 -1px 0 0px #D0D0D0 inset;
   }
 }
-/* line 9, ../scss/abc/_header.scss */
-#site-header {
-  box-shadow: 0 1px 1px rgba(174, 180, 191, 0.3);
+/* line 10, ../scss/abc/_header.scss */
+.page {
+  position: relative;
+  padding-top: 45px;
 }
-/* line 12, ../scss/abc/_header.scss */
+
+/* line 14, ../scss/abc/_header.scss */
+#site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  box-shadow: 0 1px 1px rgba(174, 180, 191, 0.3);
+  background: #FFF;
+  z-index: 1000;
+}
+/* line 24, ../scss/abc/_header.scss */
 #site-header .top-bar,
 #site-header ul,
 #site-header a {
   background-color: #FFF;
   color: #474D59;
 }
-/* line 19, ../scss/abc/_header.scss */
+/* line 31, ../scss/abc/_header.scss */
 #site-header li a:hover {
   background-color: #f2f2f2;
 }
-/* line 25, ../scss/abc/_header.scss */
+/* line 37, ../scss/abc/_header.scss */
 #site-header .top-bar .name .a {
   color: #00A2E4;
 }
-/* line 26, ../scss/abc/_header.scss */
+/* line 38, ../scss/abc/_header.scss */
 #site-header .top-bar .name .b {
   color: #FECC01;
 }
-/* line 27, ../scss/abc/_header.scss */
+/* line 39, ../scss/abc/_header.scss */
 #site-header .top-bar .name .c {
   color: #F93E32;
 }
-/* line 28, ../scss/abc/_header.scss */
+/* line 40, ../scss/abc/_header.scss */
 #site-header .top-bar .name a {
   background-color: #FFF;
 }
-/* line 34, ../scss/abc/_header.scss */
+/* line 46, ../scss/abc/_header.scss */
 #site-header .top-bar .menu-icon a {
   background: none;
 }
-/* line 37, ../scss/abc/_header.scss */
+/* line 49, ../scss/abc/_header.scss */
 #site-header .top-bar .menu-icon span {
   box-shadow: none;
+  padding-right: 4px;
 }
-/* line 39, ../scss/abc/_header.scss */
+/* line 52, ../scss/abc/_header.scss */
 #site-header .top-bar .menu-icon span:after {
   position: absolute;
   content: "☰";
   top: -1px;
-  right: -23px;
+  right: -28px;
   font-size: 15px;
 }
-/* line 51, ../scss/abc/_header.scss */
+/* line 64, ../scss/abc/_header.scss */
 #site-header .top-bar-section .has-dropdown > a:after {
   border-color: transparent transparent transparent #474D59;
 }
-/* line 57, ../scss/abc/_header.scss */
+/* line 70, ../scss/abc/_header.scss */
 #site-header #donate-button a {
   background: #F93E32;
   color: #FFF;
 }
-/* line 60, ../scss/abc/_header.scss */
+/* line 73, ../scss/abc/_header.scss */
 #site-header #donate-button a:hover {
   background-color: #fa6d64;
 }
 
 @media only screen and (min-width: 1020px) {
-  /* line 69, ../scss/abc/_header.scss */
+  /* line 82, ../scss/abc/_header.scss */
+  .page {
+    padding-top: 80px;
+  }
+
+  /* line 85, ../scss/abc/_header.scss */
   #site-header {
     height: 80px;
     padding: 0 45px;
   }
-  /* line 73, ../scss/abc/_header.scss */
+  /* line 89, ../scss/abc/_header.scss */
   #site-header .top-bar {
     background: #FFF;
   }
-  /* line 76, ../scss/abc/_header.scss */
+  /* line 92, ../scss/abc/_header.scss */
   #site-header .top-bar .title-area {
     position: absolute;
     margin-top: 13px;
     z-index: 2;
   }
-  /* line 80, ../scss/abc/_header.scss */
+  /* line 96, ../scss/abc/_header.scss */
   #site-header .top-bar .title-area a {
     background: url("http://i.imgur.com/7IZCtvA.jpg") no-repeat;
     height: 52px;
     width: 72px;
     text-indent: -9999px;
   }
-  /* line 89, ../scss/abc/_header.scss */
+  /* line 105, ../scss/abc/_header.scss */
   #site-header #main-menu {
     width: 100%;
     background: none;
     padding-left: 97px;
     z-index: 1;
   }
-  /* line 96, ../scss/abc/_header.scss */
+  /* line 112, ../scss/abc/_header.scss */
   #site-header a {
     padding: 0 25px;
     font-size: 15px;
     line-height: 80px;
     font-weight: bold;
   }
-  /* line 101, ../scss/abc/_header.scss */
+  /* line 117, ../scss/abc/_header.scss */
   #site-header a:after {
     display: none;
   }
-  /* line 106, ../scss/abc/_header.scss */
+  /* line 122, ../scss/abc/_header.scss */
   #site-header li:hover a {
     background-color: #f2f2f2;
   }
-  /* line 110, ../scss/abc/_header.scss */
+  /* line 126, ../scss/abc/_header.scss */
   #site-header .dropdown {
     background: none;
   }
-  /* line 112, ../scss/abc/_header.scss */
+  /* line 128, ../scss/abc/_header.scss */
   #site-header .dropdown a {
     font-weight: normal;
     line-height: 48px;
     padding-right: 40px;
   }
-  /* line 117, ../scss/abc/_header.scss */
+  /* line 133, ../scss/abc/_header.scss */
   #site-header .dropdown a:hover {
     color: #00A2E4;
   }
-  /* line 121, ../scss/abc/_header.scss */
+  /* line 137, ../scss/abc/_header.scss */
   #site-header .dropdown .first a {
     padding-top: 15px;
   }
-  /* line 124, ../scss/abc/_header.scss */
+  /* line 140, ../scss/abc/_header.scss */
   #site-header .dropdown .last a {
     padding-bottom: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  /* line 131, ../scss/abc/_header.scss */
+  /* line 147, ../scss/abc/_header.scss */
   #site-header #donate-button {
     float: right;
   }
-  /* line 133, ../scss/abc/_header.scss */
+  /* line 149, ../scss/abc/_header.scss */
   #site-header #donate-button a {
     margin-top: 16px;
     line-height: 48px;
@@ -7557,6 +7576,16 @@ a.th {
     border-radius: 3px;
   }
 }
+/* line 161, ../scss/abc/_header.scss */
+body.navbar-administration .page {
+  padding: 0;
+}
+/* line 164, ../scss/abc/_header.scss */
+body.navbar-administration #site-header {
+  position: relative;
+  z-index: inherit;
+}
+
 /* line 4, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header {
   padding: 50px 0 90px;
@@ -7684,6 +7713,31 @@ a.th {
 /* line 15, ../scss/abc/_footer.scss */
 #site-footer ul li a:hover {
   color: #caced6;
+}
+
+/* line 2, ../scss/abc/_blog.scss */
+.node-type-blog-post .pane-node-field-byline,
+.node-type-blog-post .pane-node-created {
+  float: left;
+  margin-bottom: 30px;
+  color: #AEB4BF;
+  font-size: 16px;
+  line-height: 22px;
+}
+/* line 10, ../scss/abc/_blog.scss */
+.node-type-blog-post .pane-node-field-byline .pane-title,
+.node-type-blog-post .pane-node-created .pane-title {
+  display: none;
+}
+/* line 15, ../scss/abc/_blog.scss */
+.node-type-blog-post .pane-node-field-byline {
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid #AEB4BF;
+}
+/* line 21, ../scss/abc/_blog.scss */
+.node-type-blog-post .pane-node-body {
+  clear: both;
 }
 
 /* line 2, ../scss/abc/_event.scss */

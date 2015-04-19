@@ -1,9 +1,9 @@
 (function ($, Drupal) {
 
-  Drupal.behaviors.STARTER = {
+  /*Drupal.behaviors.AbcHeader = {
     attach: function(context, settings) {
-      // Get your Yeti started.
+      // Have at it
     }
-  };
+  };*/
 
 })(jQuery, Drupal);
