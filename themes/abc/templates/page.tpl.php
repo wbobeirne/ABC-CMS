@@ -13,7 +13,7 @@
           <ul class="title-area">
             <li class="name">
               <h1>
-                <a href="<?php url('front') ?>" rel="home" title="ABC Home">
+                <a href="<?php print url('<front>') ?>" rel="home" title="ABC Home">
                   <span class="a">A</span><!--
                --><span class="b">B</span><!--
                --><span class="c">C</span>
