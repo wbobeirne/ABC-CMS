@@ -1,0 +1,36 @@
+.node-type-event {
+  .field-name-body {
+    margin-bottom: 60px;
+  }
+
+  .field-name-field-ticket-link {
+    margin-bottom: 20px;
+
+    a {
+      display: block;
+      max-width: 300px;
+      padding: 24px 28px;
+      margin: auto;
+      font-size: $minor-section-fsize;
+      line-height: $minor-section-lheight;
+      background: $color-blue-pri;
+      color: #FFF;
+      border-radius: 4px;
+      text-align: center;
+
+      &:hover {
+        background: $color-blue-sec;
+      }
+    }
+  }
+
+  .field-name-field-donate-link {
+    text-align: center;
+    color: $color-gray-dark;
+
+    &:before {
+      content: "Can't make it?";
+      padding-right: 3px;
+    }
+  }
+}

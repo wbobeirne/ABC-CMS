@@ -90,10 +90,12 @@ body {
 /* line 79, ../scss/typography.scss */
 .field-name-body img,
 .cke_editable img {
+  display: block;
+  margin: auto;
   max-width: 100%;
 }
 
-/* line 86, ../scss/typography.scss */
+/* line 88, ../scss/typography.scss */
 .cke_editable {
   margin: 0;
   padding: 20px 30px;

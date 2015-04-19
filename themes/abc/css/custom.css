@@ -7591,54 +7591,54 @@ a.th {
   margin: 0;
 }
 /* line 35, ../scss/abc/_panels.scss */
+.pane-bundle-wide-header.title-only {
+  padding-bottom: 50px;
+}
+/* line 37, ../scss/abc/_panels.scss */
+.pane-bundle-wide-header.title-only .pane-title {
+  font-size: 2.5em;
+  line-height: 52px;
+}
+/* line 43, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-bg {
   padding-top: 10%;
   padding-bottom: 15%;
 }
-/* line 38, ../scss/abc/_panels.scss */
+/* line 46, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-bg .pane-title,
 .pane-bundle-wide-header.has-bg .pane-content {
   color: #FFF;
   text-shadow: 1px 1px 1px #2A2F35;
 }
-/* line 43, ../scss/abc/_panels.scss */
+/* line 51, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-bg .pane-title:after {
   background-color: #FFF;
   box-shadow: 1px 1px 1px #2A2F35;
 }
-/* line 50, ../scss/abc/_panels.scss */
+/* line 58, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-color .pane-title,
 .pane-bundle-wide-header.has-color .pane-content {
   color: #FFF;
 }
-/* line 54, ../scss/abc/_panels.scss */
+/* line 62, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.has-color .pane-title:after {
   background-color: rgba(250, 251, 253, 0.5);
 }
-/* line 58, ../scss/abc/_panels.scss */
+/* line 66, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-blue {
   background-color: #00A2E4;
 }
-/* line 61, ../scss/abc/_panels.scss */
+/* line 69, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-red {
   background-color: #F93E32;
 }
-/* line 64, ../scss/abc/_panels.scss */
+/* line 72, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-gold {
   background-color: #FECC01;
 }
-/* line 67, ../scss/abc/_panels.scss */
+/* line 75, ../scss/abc/_panels.scss */
 .pane-bundle-wide-header.color-purple {
   background-color: #6327A3;
-}
-/* line 71, ../scss/abc/_panels.scss */
-.pane-bundle-wide-header.title-only {
-  padding-bottom: 50px;
-}
-/* line 73, ../scss/abc/_panels.scss */
-.pane-bundle-wide-header.title-only .pane-title {
-  font-size: 2.5em;
-  line-height: 52px;
 }
 
 /* line 82, ../scss/abc/_panels.scss */
@@ -7684,6 +7684,42 @@ a.th {
 /* line 15, ../scss/abc/_footer.scss */
 #site-footer ul li a:hover {
   color: #caced6;
+}
+
+/* line 2, ../scss/abc/_event.scss */
+.node-type-event .field-name-body {
+  margin-bottom: 60px;
+}
+/* line 6, ../scss/abc/_event.scss */
+.node-type-event .field-name-field-ticket-link {
+  margin-bottom: 20px;
+}
+/* line 9, ../scss/abc/_event.scss */
+.node-type-event .field-name-field-ticket-link a {
+  display: block;
+  max-width: 300px;
+  padding: 24px 28px;
+  margin: auto;
+  font-size: 1.4em;
+  line-height: 34px;
+  background: #00A2E4;
+  color: #FFF;
+  border-radius: 4px;
+  text-align: center;
+}
+/* line 21, ../scss/abc/_event.scss */
+.node-type-event .field-name-field-ticket-link a:hover {
+  background: #66BADD;
+}
+/* line 27, ../scss/abc/_event.scss */
+.node-type-event .field-name-field-donate-link {
+  text-align: center;
+  color: #474D59;
+}
+/* line 31, ../scss/abc/_event.scss */
+.node-type-event .field-name-field-donate-link:before {
+  content: "Can't make it?";
+  padding-right: 3px;
 }
 
 /* line 1, ../scss/abc/_files.scss */

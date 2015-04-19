@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ABC Event feature.
+ */
+
+include_once 'abc_event.features.inc';

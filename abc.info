@@ -33,6 +33,7 @@ dependencies[] = update
 ;**********************;
 
 dependencies[] = abc_basic
+dependencies[] = abc_event
 dependencies[] = abc_files
 dependencies[] = abc_grid
 dependencies[] = abc_home
