@@ -87,7 +87,7 @@ function abc_home_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
-      'title' => 'optional',
+      'title' => 'none',
       'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',

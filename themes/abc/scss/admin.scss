@@ -26,7 +26,9 @@
     }
     .modal-content {
       padding: 1em 2em;
-      overflow: hidden;
+      overflow: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
       width: 100% !important;
     }
     .modal-header {
@@ -77,6 +79,10 @@
     form {
       button {
         margin-bottom: 0;
+      }
+      label {
+        font-size: 16px;
+        margin-bottom: 5px;
       }
     }
     .form-item-title {
