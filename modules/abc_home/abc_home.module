@@ -71,7 +71,8 @@ function abc_home_build_custom_block($vars) {
     'thumbnail' => '',
     'title' => '',
     'text' => '',
-    'href' => ''
+    'href' => '',
+    'date' => ''
   );
 
   // Title
@@ -109,7 +110,8 @@ function abc_home_build_node_block($vars) {
     'thumbnail' => '',
     'title' => '',
     'text' => '',
-    'href' => ''
+    'href' => '',
+    'date' => ''
   );
   $node_field = field_get_items(
     'fieldable_panels_pane',
@@ -142,6 +144,14 @@ function abc_home_build_node_block($vars) {
   $text_field = field_get_items('node', $node, 'body');
   if ($text_field) {
     $block['text'] = $text_field[0]['safe_summary'];
+  }
+  // Date
+  $date_field = field_get_items('node', $node, 'field_event_date');
+  if ($date_field) {
+    $time = new DateTime($date_field[0]['value'], new DateTimezone($date_field[0]['timezone']));
+    $block['date'] = 'On ' . format_date($time->getTimestamp(), 'homepage_block');
+  } else {
+    $block['date'] = 'Posted ' . format_date($node->created, 'homepage_block');
   }
 
   return $block;

@@ -20,4 +20,11 @@
       <?php print $block['text']; ?>
     </div>
   <?php endif ?>
+
+
+  <?php if ($block['date']): ?>
+    <div class="date">
+      <?php print $block['date']; ?>
+    </div>
+  <?php endif ?>
 </div>

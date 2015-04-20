@@ -6,6 +6,11 @@
 
 // Home page block
 .homepage-block {
+  position: relative;
+  min-height: 404px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $color-gray-lighter;
+
   .thumbnail {
     margin-bottom: 20px;
 
@@ -36,5 +41,15 @@
     font-size: $body-small-fsize;
     line-height: $body-small-lheight;
     color: $color-gray-dark;
+  }
+
+  .date {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    color: $color-gray-light;
   }
 }

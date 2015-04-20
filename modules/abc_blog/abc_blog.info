@@ -28,6 +28,7 @@ features[field_instance][] = node-blog_post-field_header_background
 features[field_instance][] = node-blog_post-field_thumbnail
 features[node][] = blog_post
 features[page_manager_handlers][] = node_view__blog_post
+features[variable][] = date_format_blog_post
 features[variable][] = field_bundle_settings_node__blog_post
 features[variable][] = menu_options_blog_post
 features[variable][] = menu_parent_blog_post
