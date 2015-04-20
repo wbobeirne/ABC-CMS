@@ -7715,6 +7715,46 @@ body.navbar-administration #site-header {
   color: #caced6;
 }
 
+/* line 2, ../scss/abc/_home.scss */
+.front #panels-ipe-regionid-top {
+  margin-bottom: 30px;
+}
+
+/* line 9, ../scss/abc/_home.scss */
+.homepage-block .thumbnail {
+  margin-bottom: 20px;
+}
+/* line 12, ../scss/abc/_home.scss */
+.homepage-block .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+/* line 16, ../scss/abc/_home.scss */
+.homepage-block .thumbnail .placeholder {
+  width: 100%;
+  padding-bottom: 70%;
+  background: #EBEDF2;
+}
+/* line 23, ../scss/abc/_home.scss */
+.homepage-block .title {
+  display: block;
+  margin-bottom: 5px;
+  color: #00A2E4;
+  font-size: 1.4em;
+  line-height: 34px;
+  font-weight: 600;
+}
+/* line 30, ../scss/abc/_home.scss */
+.homepage-block .title:hover {
+  color: #66BADD;
+}
+/* line 35, ../scss/abc/_home.scss */
+.homepage-block .text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #474D59;
+}
+
 /* line 2, ../scss/abc/_blog.scss */
 .node-type-blog-post .pane-node-field-byline,
 .node-type-blog-post .pane-node-created {

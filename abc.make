@@ -118,6 +118,10 @@ projects[pathauto_persist][version] = 1.3
 projects[plupload][subdir] = contrib
 projects[plupload][version] = 1.7
 
+; References
+projects[references][subdir] = contrib
+projects[references][version] = 2.1
+
 ; Strongarm
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0

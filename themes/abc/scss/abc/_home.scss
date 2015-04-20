@@ -1,0 +1,40 @@
+.front {
+  #panels-ipe-regionid-top {
+    margin-bottom: 30px;
+  }
+}
+
+// Home page block
+.homepage-block {
+  .thumbnail {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .placeholder {
+      width: 100%;
+      padding-bottom: 70%;
+      background: $color-gray-lighter;
+    }
+  }
+
+  .title {
+    display: block;
+    margin-bottom: 5px;
+    color: $color-blue-pri;
+    font-size: $minor-section-fsize;
+    line-height: $minor-section-lheight;
+    font-weight: 600;
+    &:hover {
+      color: $color-blue-sec;
+    }
+  }
+
+  .text {
+    font-size: $body-small-fsize;
+    line-height: $body-small-lheight;
+    color: $color-gray-dark;
+  }
+}

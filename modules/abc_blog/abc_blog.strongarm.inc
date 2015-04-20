@@ -22,7 +22,7 @@ function abc_blog_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

@@ -24,13 +24,13 @@ function abc_grid_image_default_styles() {
 
   // Exported image style: grid_image.
   $styles['grid_image'] = array(
-    'label' => 'Grid Image (305x260)',
+    'label' => 'Grid Image',
     'effects' => array(
-      3 => array(
+      5 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 305,
-          'height' => 260,
+          'width' => 610,
+          'height' => 520,
         ),
         'weight' => 1,
       ),

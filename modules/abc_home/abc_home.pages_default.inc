@@ -52,7 +52,7 @@ function abc_home_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'wides_and_single';
+  $display->layout = 'wides_and_three';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(

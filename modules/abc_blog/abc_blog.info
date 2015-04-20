@@ -25,6 +25,7 @@ features[field_instance][] = node-blog_post-body
 features[field_instance][] = node-blog_post-field_byline
 features[field_instance][] = node-blog_post-field_color
 features[field_instance][] = node-blog_post-field_header_background
+features[field_instance][] = node-blog_post-field_thumbnail
 features[node][] = blog_post
 features[page_manager_handlers][] = node_view__blog_post
 features[variable][] = field_bundle_settings_node__blog_post
