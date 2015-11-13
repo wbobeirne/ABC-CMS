@@ -57,6 +57,7 @@ dependencies[] = navbar
 dependencies[] = pathauto
 dependencies[] = pathauto_persist
 dependencies[] = plupload
+dependencies[] = special_menu_items
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_content
