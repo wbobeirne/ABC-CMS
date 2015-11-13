@@ -213,13 +213,6 @@ function abc_users_user_default_permissions() {
     'module' => 'media',
   );
 
-  // Exported permission: 'administer media wysiwyg view mode'.
-  $permissions['administer media wysiwyg view mode'] = array(
-    'name' => 'administer media wysiwyg view mode',
-    'roles' => array(),
-    'module' => 'media_wysiwyg_view_mode',
-  );
-
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -435,35 +428,50 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'create blog_post content'.
   $permissions['create blog_post content'] = array(
     'name' => 'create blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'create event content'.
   $permissions['create event content'] = array(
     'name' => 'create event content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'create fieldable fieldable_panels_pane'.
   $permissions['create fieldable fieldable_panels_pane'] = array(
     'name' => 'create fieldable fieldable_panels_pane',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable homepage_block_custom'.
   $permissions['create fieldable homepage_block_custom'] = array(
     'name' => 'create fieldable homepage_block_custom',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable homepage_block_node'.
   $permissions['create fieldable homepage_block_node'] = array(
     'name' => 'create fieldable homepage_block_node',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -471,6 +479,7 @@ function abc_users_user_default_permissions() {
   $permissions['create fieldable wide_header'] = array(
     'name' => 'create fieldable wide_header',
     'roles' => array(
+      'Admin' => 'Admin',
       'Editor' => 'Editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -480,6 +489,7 @@ function abc_users_user_default_permissions() {
   $permissions['create fieldable wide_image_rotator'] = array(
     'name' => 'create fieldable wide_image_rotator',
     'roles' => array(
+      'Admin' => 'Admin',
       'Editor' => 'Editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -561,7 +571,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'delete any blog_post content'.
   $permissions['delete any blog_post content'] = array(
     'name' => 'delete any blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'node',
   );
 
@@ -575,7 +587,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'delete any event content'.
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'node',
   );
 
@@ -626,35 +640,50 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'delete fieldable fieldable_panels_pane'.
   $permissions['delete fieldable fieldable_panels_pane'] = array(
     'name' => 'delete fieldable fieldable_panels_pane',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable homepage_block_custom'.
   $permissions['delete fieldable homepage_block_custom'] = array(
     'name' => 'delete fieldable homepage_block_custom',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable homepage_block_node'.
   $permissions['delete fieldable homepage_block_node'] = array(
     'name' => 'delete fieldable homepage_block_node',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable wide_header'.
   $permissions['delete fieldable wide_header'] = array(
     'name' => 'delete fieldable wide_header',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable wide_image_rotator'.
   $permissions['delete fieldable wide_image_rotator'] = array(
     'name' => 'delete fieldable wide_image_rotator',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -668,7 +697,10 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'delete own blog_post content'.
   $permissions['delete own blog_post content'] = array(
     'name' => 'delete own blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
@@ -682,7 +714,10 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'delete own event content'.
   $permissions['delete own event content'] = array(
     'name' => 'delete own event content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
@@ -805,7 +840,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'edit any blog_post content'.
   $permissions['edit any blog_post content'] = array(
     'name' => 'edit any blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'node',
   );
 
@@ -819,7 +856,9 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'edit any event content'.
   $permissions['edit any event content'] = array(
     'name' => 'edit any event content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
     'module' => 'node',
   );
 
@@ -870,21 +909,30 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'edit fieldable fieldable_panels_pane'.
   $permissions['edit fieldable fieldable_panels_pane'] = array(
     'name' => 'edit fieldable fieldable_panels_pane',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable homepage_block_custom'.
   $permissions['edit fieldable homepage_block_custom'] = array(
     'name' => 'edit fieldable homepage_block_custom',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable homepage_block_node'.
   $permissions['edit fieldable homepage_block_node'] = array(
     'name' => 'edit fieldable homepage_block_node',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -892,6 +940,7 @@ function abc_users_user_default_permissions() {
   $permissions['edit fieldable wide_header'] = array(
     'name' => 'edit fieldable wide_header',
     'roles' => array(
+      'Admin' => 'Admin',
       'Editor' => 'Editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -901,6 +950,7 @@ function abc_users_user_default_permissions() {
   $permissions['edit fieldable wide_image_rotator'] = array(
     'name' => 'edit fieldable wide_image_rotator',
     'roles' => array(
+      'Admin' => 'Admin',
       'Editor' => 'Editor',
     ),
     'module' => 'fieldable_panels_panes',
@@ -916,7 +966,10 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'edit own blog_post content'.
   $permissions['edit own blog_post content'] = array(
     'name' => 'edit own blog_post content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
@@ -930,7 +983,10 @@ function abc_users_user_default_permissions() {
   // Exported permission: 'edit own event content'.
   $permissions['edit own event content'] = array(
     'name' => 'edit own event content',
-    'roles' => array(),
+    'roles' => array(
+      'Admin' => 'Admin',
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
