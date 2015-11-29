@@ -99,7 +99,9 @@ function abc_home_build_custom_block($vars) {
   // Link
   $link_field = field_get_items('fieldable_panels_pane', $panel, 'field_link');
   if ($link_field) {
-    $block['href'] = $link_field[0]['url'];
+    $block['href'] = url($link_field[0]['url'], array(
+      "query" => $link_field[0]['query']
+    ));
   }
 
   return $block;
