@@ -7927,8 +7927,9 @@ body.navbar-administration #site-header {
 /* line 17, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item {
   margin: 0 -25px;
+  text-align: center;
 }
-/* line 19, ../scss/abc/_grid.scss */
+/* line 20, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-collection-view {
   position: relative;
   display: inline-block;
@@ -7937,8 +7938,9 @@ body.navbar-administration #site-header {
   padding: 0;
   border: none;
   vertical-align: top;
+  text-align: left;
 }
-/* line 27, ../scss/abc/_grid.scss */
+/* line 29, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-collection-view .field-collection-view-links {
   position: absolute;
   top: 0;
@@ -7952,7 +7954,7 @@ body.navbar-administration #site-header {
   -o-transition: opacity 100ms ease;
   transition: opacity 100ms ease;
 }
-/* line 36, ../scss/abc/_grid.scss */
+/* line 38, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-collection-view .field-collection-view-links a {
   margin: 0;
   padding: 10px 6px;
@@ -7960,54 +7962,54 @@ body.navbar-administration #site-header {
   color: #FFF;
   opacity: 0.7;
 }
-/* line 42, ../scss/abc/_grid.scss */
+/* line 44, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-collection-view .field-collection-view-links a:hover {
   opacity: 1;
 }
-/* line 47, ../scss/abc/_grid.scss */
+/* line 49, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-collection-view:hover .field-collection-view-links {
   opacity: 1;
 }
-/* line 51, ../scss/abc/_grid.scss */
+/* line 53, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .image {
   margin-bottom: 10px;
 }
-/* line 53, ../scss/abc/_grid.scss */
+/* line 55, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .image img {
   width: 100%;
 }
-/* line 57, ../scss/abc/_grid.scss */
+/* line 59, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-name-field-title {
   font-size: 1.4em;
   line-height: 34px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-/* line 63, ../scss/abc/_grid.scss */
+/* line 65, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item .field-name-field-description {
   font-size: 18px;
   line-height: 28px;
 }
-/* line 67, ../scss/abc/_grid.scss */
+/* line 69, ../scss/abc/_grid.scss */
 .node-type-grid .field-name-field-grid-item a {
   font-size: 18px;
   line-height: 28px;
 }
 
 @media screen and (max-width: 1020px) {
-  /* line 76, ../scss/abc/_grid.scss */
+  /* line 78, ../scss/abc/_grid.scss */
   .node-type-grid .field-name-field-grid-item {
     width: 680px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 85, ../scss/abc/_grid.scss */
+  /* line 87, ../scss/abc/_grid.scss */
   .node-type-grid .field-name-field-grid-item {
     width: 100%;
     margin: 0 auto;
   }
-  /* line 89, ../scss/abc/_grid.scss */
+  /* line 91, ../scss/abc/_grid.scss */
   .node-type-grid .field-name-field-grid-item .field-collection-view {
     display: block;
     width: auto;

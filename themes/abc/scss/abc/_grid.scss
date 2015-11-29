@@ -16,6 +16,7 @@ $two-col-width: 680px;
 
   .field-name-field-grid-item {
     margin: 0 -25px;
+    text-align: center;
     .field-collection-view {
       position: relative;
       display: inline-block;
@@ -24,6 +25,7 @@ $two-col-width: 680px;
       padding: 0;
       border: none;
       vertical-align: top;
+      text-align: left;
       .field-collection-view-links {
         position: absolute;
         top: 0;
